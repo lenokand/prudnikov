@@ -1,0 +1,30 @@
+// @import "../assets/css/normalize.css";
+@import "/node_modules/normalize.css";
+@import '/node_modules/bootstrap/scss/bootstrap.scss';
+
+@import "./libs.scss";
+
+
+
+
+body{
+    // background-image: url(./assets/img/bg.jpg);
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    input{
+        text-align: center;
+        padding: 20px 30px;
+    }
+}
+
+
+
+@media screen and (max-width:950px){
+    
+    
+}
+@media screen and (max-width:1250px){
+   
+    
+}
