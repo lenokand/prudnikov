@@ -1,59 +1,359 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prudnikov</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prudnikov</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
 </head>
+
 <body>
 
-  <section class="main-screen">
+  <section class="main-screen" style="background-image: url(img/fon_top.png);"> 
     <div id="shadow"></div>
-    <div class="conteiner">
+    <div class="container">
+
       <div class="logo_hiden">
         <a href="#"><img src="img/logo.svg" alt="Prudnikov"></a>
+      </div>
+      <menu id="main-menu">
+        <div class="main-menu_top">
+
+          <div class="logo">
+            <a href="#"><img src="img/logo.svg" alt="Prudnikov"></a>
+          </div>
+
+          <div class="search">
+            <input class="search" type="text" placeholder="Поиск" >
+            <img src="img/search.svg" alt="search">
+          </div>
+          
+          
+          
+            <div class="mail_item">
+              <img src="img/letter.svg" alt="letter">
+              <a href="mailto:vashapochta@gmail.com"> vashapochta@gmail.com</a>
+            </div>
+
+            <div class="telephone_item">
+              <img src="img/telephone.svg" alt="phone"> <a href="tel:+7 (499) 403-17-10"> +7 (499)
+                403-17-10</a>
+            </div>
+
+          
+
+          <button class="btn btn-call wow fadeInDown " data-bs-toggle="modal" data-bs-target="#CallModal">Оставить
+            заявку</button>
+
+        </div>
+
+
+        <div class="main_menu_bottomn">
+          <div> <a href="#">Главная</a></div>
+          <div> <a href="#">О враче</a> </div>
+          <div><a href="#">Лечение с операцией</a></div>
+          <div><a href="#">Лечение без операции</a></div>
+          <div><a href="#">Отзывы</a></div>
+          <div><a href="#">Контакты</a></div>
+
+        </div>
+
+      </menu>
+
+      <button id="burger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+       <!-- Modal call-->
+       <div class="modal fade" id="CallModal" tabindex="-1" aria-labelledby="CallModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="form " style="background-image: url(img/carabineSm.png);">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h4>Остались вопросы?
+                    </h4>
+                    <p>Получите бесплатную консультацию</p>
+                    <form action="" method="POST">
+                        <input type="text" minlength="1" name="name" id="name" placeholder="Ваше имя" required>
+                        <input type="tel" minlength="10" name="telephone" id="telephone"
+                            placeholder="Ваш номер телефона" required>
+
+                        <textarea cols="32" name="message" rows="3" placeholder="Сообщение"></textarea>
+                        <button type="submit" class="btn btn-submit">
+                            отправить заявку
+                        </button>
+                        <label for="checkbox">
+                            <input id="checkbox" class="custom-checkbox" type="checkbox" checked required>
+                            <span class="check">
+                                <img src="img/check-ltl.svg" alt=""></span>
+
+                            Принимаю &nbsp <a href="#" data-bs-toggle="modal"
+                                data-bs-target="#licenseModal">условия обработки информации</a>
+                        </label>
+
+                        <!--  -->
+
+
+                    </form>
+
+                </div>
+
+            </div>
+
+
+        </div>
     </div>
-    <menu id="main-menu">
+    <!-- // -->
 
-      <div class="logo">
-          <a href="#"><img src="img/logo.svg" alt="Prudnikov"></a>
+      <div class="main-content">
+        <h1>
+          Услуги врача 
+          <br>
+          <span class="bold_txt">
+            ортопед травматолог
+          </span>
+        </h1>
+        <p>Профессионализм, использование передовых технологий,
+          многолетний опыт и тщательная разработка плана лечения...</p>
+                   
+          <button class="btn btn-call " data-bs-toggle="modal" data-bs-target="#CallModal" >Получить консультацию</button>
       </div>
-      <div class="main_menu">
-          <div> <a href="#how">Как мы работаем</a></div>
-          <div> <a href="#result">Результаты сотрудничества</a> </div>
-          <div><a href="#faq">FAQ</a></div>
-          <div><a href="#price">Стоимость</a></div>
-          <div><a href="#work">Наши проекты</a></div>
-          <div><a href="#cont">Свяжитесь с нами</a></div>
-
-      </div>
-      <div class="contacts"> <img src="img/phone.svg" alt="phone"> <a href="tel:+7 (499) 403-17-10"> +7 (499)
-              403-17-10</a></div>
-
-      <button class="btn btn-call wow fadeInDown " data-bs-toggle="modal" data-bs-target="#CallModal">Оставить заявку</button>
-
-  </menu>
-
-  <button id="burger-menu">
-      <span></span>
-      <span></span>
-      <span></span>
-  </button>
-
-
-  <div class="main-content">
-
-  </div>
 
 
     </div>
 
   </section>
-    
+  <section class="biography">
+    <div class="container">
+      <div class="left">
+        <img src="img/foto1.png" alt="foto">
+      </div>
+      <div class="right">
+
+        <div class="first_line">Давайте знакомиться</div>
+
+        <div class="name">
+          Меня зовут, <span class="bold_txt">Юрий Викторич  <span class="blue_txt">Прудников</span> </span>  
+        </div>
+
+        <div class="biography_text">
+          <p>Регулярное сотрудничество с коллегами из ведущих мировых клиник, стажировки и участие в конгрессах и симпозиумах международных и национальных организаций, позволяют ему быть в курсе новейших знаний и разработок в его специальности, а также с успехом применять эти знания и наработки для успешного восстановления своих пациентов.
+          </p>
+          <p>Доктор Прудников – активный участник национальных и международных ассоциаций травматологов. В частности, является членом Всемирного травматологического общества (International Society of Orthopaedic Surgery and Traumatology (SICOT), член Американской Академии ортопедической хирургии (American Academy of Orthopaedic Surgeons (AAOS); член Европейского общества хирургии тазобедренного сустава (European Hip Society (EHS).
+          </p>
+        </div>
+
+        <div class="facts">
+          <div class="facts_title">Факты <span class="bold_txt">в цифрах</span> </div>
+          <div class="facts_numbers">
+
+            <div class="number_item">
+              <div class="number bold_txt blue_txt">20</div>
+              <div class="number_txt">
+                <div class="top  ">лет</div>
+                <div class="bottom">стаж работы</div>
+              </div>
+
+            </div>
+            <div class="number_item">
+              <div class="number bold_txt blue_txt">3 000</div>
+              <div class="number_txt">
+                <div class="top ">пациентов</div>
+                <div class="bottom">прошедших лечение</div>
+              </div>
+
+            </div>
+            <div class="number_item">
+              <div class="number bold_txt blue_txt">12</div>
+              <div class="number_txt">
+                <div class="top ">лицензий</div>
+                <div class="bottom">и сертификатов</div>
+              </div>
+
+            </div>
+            <div class="number_item">
+              <div class="number bold_txt blue_txt">400+</div>
+              <div class="number_txt">
+                <div class="top  ">успешных</div>
+                <div class="bottom">операций  </div>
+              </div>
+
+            </div>
+           
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <section class="types">
+    <div class="container">
+      <h2><span class="bold_txt">Виды</span>  лечения</h2>
+
+        <div class="tabs">
+
+          <ul class="nav nav-pills tabs_nav" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Лечение с операцией</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Лечение без операции</a>
+            </li>
+           
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            
+            
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+              
+
+              <div class="tabs-carusel slider1 owl-carousel owl-theme "  id="slider">
+
+                <div class="carusel-item" style="background-image: url(img/tab_1.png);">
+                  
+                  <div class="item_text">
+                    <p><span class="bold_txt">Эндопротезирование</span> 
+                     <br>тазобедренного сустава</p>
+                      <a href="#">Узнать подробнее <img src="img/arrow.svg" alt="arrow"></a>
+                  </div>
+
+                  
+                </div>
+                <div class="carusel-item " style="background-image: url(img/tab_1.png);">
+                  
+                  <div class="item_text">
+                    <p> Эндопротезирование
+                      тазобедренного сустава</p>
+                      <a href="#">Узнать подробнее <img src="img/arrow.svg" alt="arrow"></a>
+                  </div>
+
+                  
+                </div>
+                <div class="carusel-item " style="background-image: url(img/tab_1.png);">
+                  
+                  <div class="item_text">
+                    <p> Эндопротезирование
+                      тазобедренного сустава</p>
+                      <a href="#">Узнать подробнее <img src="img/arrow.svg" alt="arrow"></a>
+                  </div>
+
+                  
+                </div>
+                <div class="carusel-item " style="background-image: url(img/tab_1.png);">
+                  
+                  <div class="item_text">
+                    <p> Эндопротезирование
+                      тазобедренного сустава</p>
+                      <a href="#">Узнать подробнее <img src="img/arrow.svg" alt="arrow"></a>
+                  </div>
+
+                  
+                </div>
+                
+
+              </div>
 
 
-    
+
+
+            </div>
+
+
+
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">2...</div>
+            
+          </div>
+
+
+        </div>
+    </div>
+
+  </section>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+  integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+  crossorigin="anonymous"></script>
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+  integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+  crossorigin="anonymous"></script>
+<!-- owl карусель -->
+  <script>
+    $('.slider1').owlCarousel({
+        loop: true,
+        // autoplay: true,
+        autoplayTimeout: 3000,
+        stagePadding: 0,
+        // center: true,
+        nav: true,
+        navText: [$('.arrow-left '), $('.arrow-right')],
+        dots: false,
+        margin: 30,
+
+        responsive: {
+            0: {
+                items: 1,
+                center: true
+
+            },
+            993: {
+                items: 2,
+                center: false
+
+            },
+            1200: {
+                items: 2,
+                center: false
+            },
+            1330: {
+                items: 2,
+                center: false
+
+            }
+        }
+    })
+
+
+    // карусель 2
+    $('.slider2').owlCarousel({
+        loop: true,
+        // autoplay: true,
+        autoplayTimeout: 3000,
+        stagePadding: 0,
+        // center: true,
+        nav: true,
+        navText: [$('.slider-left '), $('.slider-right')],
+        dots: false,
+        margin: 30,
+
+        responsive: {
+            0: {
+                items: 1,
+
+            },
+            1200: {
+                items: 2,
+
+            },
+            1330: {
+                items: 2,
+
+            }
+        }
+    })
+</script>
+
 </body>
+
 </html>
