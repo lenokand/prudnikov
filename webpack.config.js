@@ -67,6 +67,11 @@ module.exports = {
             template: './src/html/certificate.html',
             inject: 'body'
     }),
+        new HtmlWebpackPlugin({ 
+            filename: 'contacts.html',
+            template: './src/html/contacts.html',
+            inject: 'body'
+    }),
         new CopyWebpackPlugin({
             patterns: [
                 {

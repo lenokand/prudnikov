@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+</head>
+
+<body>
+
+  <section class="content-screen contacts_p" style="background-image: url(img/fon_content.png);">
+    <div id="shadow"></div>
+    <div class="container">
+
+      <div class="logo_hiden">
+        <a href="#"><img src="img/logo.svg" alt="Prudnikov"></a>
+      </div>
+      <menu id="main-menu">
+        <div class="main-menu_top">
+
+          <div class="logo">
+            <a href="#"><img src="img/logo.svg" alt="Prudnikov"></a>
+          </div>
+
+          <div class="search">
+            <input class="search" type="text" placeholder="Поиск">
+            <img src="img/search.svg" alt="search">
+          </div>
+
+
+
+          <div class="mail_item">
+            <img src="img/letter.svg" alt="letter">
+            <a href="mailto:vashapochta@gmail.com"> vashapochta@gmail.com</a>
+          </div>
+
+          <div class="telephone_item">
+            <img src="img/telephone.svg" alt="phone"> <a href="tel:+7 (499) 403-17-10"> +7 (499)
+              403-17-10</a>
+          </div>
+
+          <div class="language dropdown " id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="img/planet.svg" alt="планета">
+            <button class="dropdown-toggle" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">Ru <img
+                src="img/arrow-down.svg" alt="стрелка вниз">
+
+            </button>
+            <div class="change_lang dropdown-menu" aria-labelledby="dropdownMenu2">
+              <p>En</p>
+            </div>
+          </div>
+
+          <button class="btn btn-call wow fadeInDown " data-bs-toggle="modal" data-bs-target="#CallModal">Оставить
+            заявку</button>
+
+        </div>
+
+
+        <div class="main_menu_bottomn">
+          <div> <a href="#">Главная</a></div>
+          <div> <a href="#">О враче</a> </div>
+          <div><a href="#">Лечение с операцией</a></div>
+          <div><a href="#">Лечение без операции</a></div>
+          <div><a href="#">Отзывы</a></div>
+          <div><a href="#">Контакты</a></div>
+
+        </div>
+
+      </menu>
+
+      <button id="burger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Modal call-->
+      <div class="modal fade" id="CallModal" tabindex="-1" aria-labelledby="CallModal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="form " style="background-image: url(img/carabineSm.png);">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <h4>Остались вопросы?
+              </h4>
+              <p>Получите бесплатную консультацию</p>
+              <form action="" method="POST">
+                <input type="text" minlength="1" name="name" id="name" placeholder="Ваше имя" required>
+                <input type="tel" minlength="10" name="telephone" id="telephone" placeholder="Ваш номер телефона"
+                  required>
+
+                <textarea cols="32" name="message" rows="3" placeholder="Сообщение"></textarea>
+                <button type="submit" class="btn btn-submit">
+                  отправить заявку
+                </button>
+                <label for="checkbox">
+                  <input id="checkbox" class="custom-checkbox" type="checkbox" checked required>
+                  <span class="check">
+                    <img src="img/check-ltl.svg" alt=""></span>
+
+                  Принимаю &nbsp <a href="#" data-bs-toggle="modal" data-bs-target="#licenseModal">условия обработки
+                    информации</a>
+                </label>
+
+                <!--  -->
+
+
+              </form>
+
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+      <!-- // -->
+
+      <div class="main-content " data-aos="fade-right" data-aos-duration="700">
+
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Главная</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Контакты</li>
+          </ol>
+        </nav>
+
+        <h1>
+          <span class="bold_txt">Контакты</span>
+
+        </h1>
+
+      </div>
+
+    </div>
+
+
+
+    <section class="contacts">
+      <div class="container">
+        <h2><span class="bold_txt">Контактные</span> данные</h2>
+  
+        <div class="contacts-tabs">
+  
+          <div class="tabs">
+  
+            <ul class="nav nav-pills tabs_nav" id="pills-tab" role="tablist">
+  
+              <!-- таб1 -->
+              <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="pills-contact1-tab" data-bs-toggle="pill" href="#pills-contact1" role="tab"
+                  aria-controls="pills-contact1" aria-selected="true">Россия</a>
+              </li>
+              <!-- таб2 -->
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="pills-contact2-tab" data-bs-toggle="pill" href="#pills-contact2" role="tab"
+                  aria-controls="pills-contact2" aria-selected="false">Украина</a>
+              </li>
+              <!-- таб3 -->
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="pills-contact3-tab" data-bs-toggle="pill" href="#pills-contact3" role="tab"
+                  aria-controls="pills-contact3" aria-selected="false">Польша</a>
+              </li>
+              <!-- таб4 -->
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="pills-contact4-tab" data-bs-toggle="pill" href="#pills-contact4" role="tab"
+                  aria-controls="pills-contact4" aria-selected="false">Германия</a>
+              </li>
+  
+            </ul>
+  
+            <!-- контент табов -->
+            <div class="tab-content" id="pills-tabContent">
+  
+              <!-- таб1 -->
+              <div class="tab-pane fade show active" id="pills-contact1" role="tabpanel"
+                aria-labelledby="pills-contact1-tab">
+  
+                <div class="left" data-aos="fade-right" data-aos-duration="550">
+  
+                  <div class="name">
+                    <h3 class="blue_txt">Клиника</h3>
+                    <p>Медицинский центр «СМ-Клиника»</p>
+                    <a href="www.prudnikov.ru">www.prudnikov.ru</a>
+                  </div>
+                  <div class="adress">
+                    <h3 class="blue_txt">Адрес</h3>
+                    <p>г. Москва ул. Димитрова 20, оф.18.</p>
+  
+                  </div>
+                  <div class="telephone">
+                    <h3 class="blue_txt">Телефон</h3>
+                    <p>+7 (499) 403-17-10, +7 (499) 403-17-10</p>
+  
+                  </div>
+                  <div class="schedule">
+                    <h3 class="blue_txt">График работы</h3>
+                    <p>Пн-Пт: с 8:00 до 20:00</p>
+  
+                  </div>
+                  <div class="button">
+                    <button class="btn btn-call " data-bs-toggle="modal" data-bs-target="#CallModal">Получить
+                      консультацию</button>
+                  </div>
+                </div>
+                <div class="right" data-aos="fade-left" data-aos-duration="550">
+                  <!-- <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/213/moscow/house/ulitsa_bolshaya_yakimanka_18/Z04YcAZkTkwAQFtvfXtyeXVrZg==/?ll=37.615620%2C55.738487&utm_medium=mapframe&utm_source=maps&z=17.09" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Димитрова, 20 — Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCU4YCXeWC" width="570" height="310" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div> -->
+  
+  
+                  <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3176.8193514690374!2d37.60933689905935!3d55.73503870993776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b068f61b26d%3A0x90a7b97a365f6b4a!2z0YPQuy4g0JHQvtC70YzRiNCw0Y8g0K_QutC40LzQsNC90LrQsCwgMzYsINCc0L7RgdC60LLQsCwg0KDQvtGB0YHQuNGPLCAxMTkwNDk!5e0!3m2!1sru!2sua!4v1620225468014!5m2!1sru!2sua" width="570" height="420" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+  
+  
+  
+                  <div class="maps" id="map1" data-coordinates="55.75396, 37.620393" data-number=1 style="width: 570px; height: 420px"></div>
+  
+                  
+  
+  
+                </div>
+  
+              </div>
+  
+  
+              <!-- таб2 -->
+              <div class="tab-pane fade" id="pills-contact2" role="tabpanel" aria-labelledby="pills-contact2-tab">
+                <div class="left">
+  
+                  <div class="name">
+                    <h3 class="blue_txt">Клиника</h3>
+                    <p>Медицинский центр «СМ-Клиника»</p>
+                    <a href="www.prudnikov.ru">www.prudnikov.ru</a>
+                  </div>
+                  <div class="adress">
+                    <h3 class="blue_txt">Адрес</h3>
+                    <p>г. Москва ул. Димитрова 20, оф.18.</p>
+  
+                  </div>
+                  <div class="telephone">
+                    <h3 class="blue_txt">Телефон</h3>
+                    <p>+7 (499) 403-17-10, +7 (499) 403-17-10</p>
+  
+                  </div>
+                  <div class="schedule">
+                    <h3 class="blue_txt">График работы</h3>
+                    <p>Пн-Пт: с 8:00 до 20:00</p>
+  
+                  </div>
+  
+                </div>
+                <div class="right">
+                  <!-- <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/213/moscow/house/ulitsa_bolshaya_yakimanka_18/Z04YcAZkTkwAQFtvfXtyeXVrZg==/?ll=37.615620%2C55.738487&utm_medium=mapframe&utm_source=maps&z=17.09" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Димитрова, 20 — Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCU4YCXeWC" width="570" height="310" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div> -->
+  
+  
+                  <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3176.8193514690374!2d37.60933689905935!3d55.73503870993776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b068f61b26d%3A0x90a7b97a365f6b4a!2z0YPQuy4g0JHQvtC70YzRiNCw0Y8g0K_QutC40LzQsNC90LrQsCwgMzYsINCc0L7RgdC60LLQsCwg0KDQvtGB0YHQuNGPLCAxMTkwNDk!5e0!3m2!1sru!2sua!4v1620225468014!5m2!1sru!2sua" width="570" height="310" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+                  <div class="maps" id="map2" data-coordinates="55.75396, 40.393" data-number=2 style="width: 570px; height: 420px"></div>
+  
+                </div>
+  
+  
+              </div>
+              <!-- таб3 -->
+              <div class="tab-pane fade" id="pills-contact3" role="tabpanel" aria-labelledby="pills-contact3-tab">
+                <div class="left">
+  
+                  <div class="name">
+                    <h3 class="blue_txt">Клиника</h3>
+                    <p>Медицинский центр «СМ-Клиника»</p>
+                    <a href="www.prudnikov.ru">www.prudnikov.ru</a>
+                  </div>
+                  <div class="adress">
+                    <h3 class="blue_txt">Адрес</h3>
+                    <p>г. Москва ул. Димитрова 20, оф.18.</p>
+  
+                  </div>
+                  <div class="telephone">
+                    <h3 class="blue_txt">Телефон</h3>
+                    <p>+7 (499) 403-17-10, +7 (499) 403-17-10</p>
+  
+                  </div>
+                  <div class="schedule">
+                    <h3 class="blue_txt">График работы</h3>
+                    <p>Пн-Пт: с 8:00 до 20:00</p>
+  
+                  </div>
+  
+                </div>
+                <div class="right">
+                  <!-- <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/213/moscow/house/ulitsa_bolshaya_yakimanka_18/Z04YcAZkTkwAQFtvfXtyeXVrZg==/?ll=37.615620%2C55.738487&utm_medium=mapframe&utm_source=maps&z=17.09" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Димитрова, 20 — Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCU4YCXeWC" width="570" height="310" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div> -->
+  
+  
+                  <!-- <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3176.8193514690374!2d37.60933689905935!3d55.73503870993776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b068f61b26d%3A0x90a7b97a365f6b4a!2z0YPQuy4g0JHQvtC70YzRiNCw0Y8g0K_QutC40LzQsNC90LrQsCwgMzYsINCc0L7RgdC60LLQsCwg0KDQvtGB0YHQuNGPLCAxMTkwNDk!5e0!3m2!1sru!2sua!4v1620225468014!5m2!1sru!2sua"
+                    width="570" height="310" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+  
+                    <div class="maps" id="map3" data-coordinates="25.75396, 60.393" data-number=3 style="width: 570px; height: 420px"></div>
+  
+                </div>
+  
+  
+              </div>
+              <!-- таб4 -->
+              <div class="tab-pane fade" id="pills-contact4" role="tabpanel" aria-labelledby="pills-contact4-tab">
+                <div class="left">
+  
+                  <div class="name">
+                    <h3 class="blue_txt">Клиника</h3>
+                    <p>Медицинский центр «СМ-Клиника»</p>
+                    <a href="www.prudnikov.ru">www.prudnikov.ru</a>
+                  </div>
+                  <div class="adress">
+                    <h3 class="blue_txt">Адрес</h3>
+                    <p>г. Москва ул. Димитрова 20, оф.18.</p>
+  
+                  </div>
+                  <div class="telephone">
+                    <h3 class="blue_txt">Телефон</h3>
+                    <p>+7 (499) 403-17-10, +7 (499) 403-17-10</p>
+  
+                  </div>
+                  <div class="schedule">
+                    <h3 class="blue_txt">График работы</h3>
+                    <p>Пн-Пт: с 8:00 до 20:00</p>
+  
+                  </div>
+  
+                </div>
+                <div class="right">
+                  <!-- <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/213/moscow/house/ulitsa_bolshaya_yakimanka_18/Z04YcAZkTkwAQFtvfXtyeXVrZg==/?ll=37.615620%2C55.738487&utm_medium=mapframe&utm_source=maps&z=17.09" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Димитрова, 20 — Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCU4YCXeWC" width="570" height="310" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div> -->
+  
+  
+                  <!-- <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3176.8193514690374!2d37.60933689905935!3d55.73503870993776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b068f61b26d%3A0x90a7b97a365f6b4a!2z0YPQuy4g0JHQvtC70YzRiNCw0Y8g0K_QutC40LzQsNC90LrQsCwgMzYsINCc0L7RgdC60LLQsCwg0KDQvtGB0YHQuNGPLCAxMTkwNDk!5e0!3m2!1sru!2sua!4v1620225468014!5m2!1sru!2sua"
+                    width="570" height="310" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+                    <div class="maps" id="map4" data-coordinates="65.75396, 60.393" data-number=4 style="width: 570px; height: 420px"></div>
+  
+                </div>
+  
+  
+              </div>
+  
+            </div>
+  
+          </div>
+  
+  
+        </div>
+  
+      </div>
+  
+  
+  
+  
+    </section>
+  </section>
+
+
+
+
+
+
+
+
+
+
+  <footer>
+    <div class="container">
+      <div class="footer_top">
+        <div class="col">
+          <img src="img/logo_foter.png" alt="logo">
+        </div>
+        <div class="col">
+          <div class=""><a href="#">Главная</a></div>
+          <div class=""><a href="#">О враче</a></div>
+          <div class=""><a href="#">Лечение с операцией</a></div>
+        </div>
+        <div class="col">
+          <div class=""><a href="#">Лечение без операции</a></div>
+          <div class=""><a href="#">Отзывы</a></div>
+          <div class=""><a href="#">Контакты</a></div>
+        </div>
+        <div class="col ">
+          <div class="telephone">
+            <img src="img/telephone_f.svg" alt="telephone">
+            <a href="tel:+7 (499) 403-17-10">+7 (499) 403-17-10</a>
+          </div>
+          <div class="email">
+            <img src="img/letter_f.svg" alt="letter">
+            <a href="mailto:vashapochta@gmail.com">vashapochta@gmail.com</a>
+          </div>
+        </div>
+        <div class="col">
+          <button class="btn-footer">Оставить заявку</button>
+        </div>
+      </div>
+      <div class="footer_botomn">
+        <div class="left">
+          © Prudnikov, 2021
+        </div>
+        <div class="right">
+          <a href="#" data-bs-toggle="modal" data-bs-target="#licenseModal">Политика конфидециальности</a>
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </footer>
+
+
+
+  <!-- OWL -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous"></script>
+
+  <!-- ГАЛЕРЕЯ -->
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <!-- owl карусель -->
+  <script>
+    $('.slider1').owlCarousel({
+      loop: true,
+      // autoplay: true,
+      autoplayTimeout: 3000,
+      stagePadding: 0,
+      // center: true,
+      nav: true,
+      navText: [$('.arrow-left '), $('.arrow-right')],
+      dots: false,
+      margin: 20,
+
+      responsive: {
+        0: {
+          items: 1,
+          center: true
+
+        },
+        993: {
+          items: 1,
+          center: true
+
+        },
+        1199: {
+          items: 1,
+          center: true
+
+        },
+        1330: {
+          items: 2,
+          center: false
+
+        }
+      }
+    })
+
+
+    // карусель 2
+    $('.slider2').owlCarousel({
+      loop: true,
+      // autoplay: true,
+      autoplayTimeout: 3000,
+      stagePadding: 0,
+      // center: true,
+      nav: true,
+      navText: [$('.slider-left '), $('.slider-right')],
+      dots: false,
+      margin: 20,
+
+      responsive: {
+        0: {
+          items: 1,
+
+        },
+        1199: {
+          items: 1,
+
+        },
+        1330: {
+          items: 2,
+
+        }
+      }
+    })
+    // карусель 3
+    $('.slider3').owlCarousel({
+      loop: true,
+      // autoplay: true,
+      autoplayTimeout: 3000,
+      stagePadding: 0,
+      // center: true,
+      nav: true,
+      navText: [$('.slider-left2 '), $('.slider-right2')],
+      dots: false,
+      margin: 20,
+
+      responsive: {
+        0: {
+          items: 2,
+
+        },
+        576: {
+          items: 3,
+
+        },
+        1199: {
+          items: 4,
+
+        },
+        1330: {
+          items: 4,
+
+        }
+      }
+    })
+    // карусель 4
+    $('.slider4').owlCarousel({
+      loop: true,
+      // autoplay: true,
+      autoplayTimeout: 3000,
+      stagePadding: 0,
+      // center: true,
+      nav: true,
+      navText: [$('.slider-left3 '), $('.slider-right3')],
+      dots: false,
+      margin: 30,
+
+      responsive: {
+        0: {
+          items: 1,
+
+        },
+        1199: {
+          items: 2,
+
+        },
+        1330: {
+          items: 2,
+
+        }
+      }
+    })
+  </script>
+
+</body>
+
+</html>
