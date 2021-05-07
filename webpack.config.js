@@ -52,6 +52,21 @@ module.exports = {
             template: './src/html/reweiws.html',
             inject: 'body'
     }),
+        new HtmlWebpackPlugin({ 
+            filename: 'articles.html',
+            template: './src/html/articles.html',
+            inject: 'body'
+    }),
+        new HtmlWebpackPlugin({ 
+            filename: 'faq.html',
+            template: './src/html/faq.html',
+            inject: 'body'
+    }),
+        new HtmlWebpackPlugin({ 
+            filename: 'certificate.html',
+            template: './src/html/certificate.html',
+            inject: 'body'
+    }),
         new CopyWebpackPlugin({
             patterns: [
                 {

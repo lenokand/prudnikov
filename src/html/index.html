@@ -6,10 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Prudnikov</title>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+
+
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
     integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
     crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+     />
 </head>
 
 <body>
@@ -44,28 +50,30 @@
             <img src="img/telephone.svg" alt="телефон"> <a href="tel:+7 (499) 403-17-10"> +7 (499)
               403-17-10</a>
           </div>
-          <div  class="language dropdown " id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+          <div class="language dropdown " id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
             <img src="img/planet.svg" alt="планета">
-            <button class="dropdown-toggle" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">Ru <img  src="img/arrow-down.svg" alt="стрелка вниз">
-           
+            <button class="dropdown-toggle" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">Ru <img
+                src="img/arrow-down.svg" alt="стрелка вниз">
+
             </button>
             <div class="change_lang dropdown-menu" aria-labelledby="dropdownMenu2">
-              <p>En</p>
+              <a href="#"><p>En</p></a>
             </div>
           </div>
 
 
 
-          <button class="btn btn-call wow fadeInDown " data-bs-toggle="modal" data-bs-target="#CallModal">Заказать звонок</button>
+          <button class="btn btn-call wow fadeInDown " data-bs-toggle="modal" data-bs-target="#CallModal">Заказать
+            звонок</button>
 
         </div>
 
 
         <div class="main_menu_bottomn">
-          <div> <a href="#">Главная</a></div>
+          <div> <a href="certificate.html">Главная</a></div>
           <div> <a href="second.html">О враче</a> </div>
-          <div><a href="#">Лечение с операцией</a></div>
-          <div><a href="#">Лечение без операции</a></div>
+          <div><a href="articles.html">Лечение с операцией</a></div>
+          <div><a href="faq.html">Лечение без операции</a></div>
           <div><a href="reweiws.html">Отзывы</a></div>
           <div><a href="#">Контакты</a></div>
 
@@ -120,7 +128,7 @@
       </div>
       <!-- // -->
 
-      <div class="main-content "  data-aos="fade-right" data-aos-duration="700">
+      <div class="main-content " data-aos="fade-right" data-aos-duration="700">
         <h1>
           Услуги врача
           <br>
@@ -210,7 +218,7 @@
   </section>
 
   <section class="types">
-    <div class="container " >
+    <div class="container ">
       <h2><span class="bold_txt">Виды</span> лечения</h2>
 
       <div class="tabs" data-aos="fade-right" data-aos-duration="600">
@@ -403,7 +411,8 @@
       <div class="arrow_car slider-right2 wow fadeInRight"><img src="img/arrow-right.svg" alt="arrow right"></div>
 
 
-      <div class="sertificate-carusel slider3 owl-carousel owl-theme " id="slider3" data-aos="fade-right" data-aos-duration="500">
+      <div class="sertificate-carusel slider3 owl-carousel owl-theme " id="slider3" data-aos="fade-right"
+        data-aos-duration="500">
 
         <div class="carusel_item">
           <img src="img/certificate1.png" alt="certificate">
@@ -457,7 +466,8 @@
 
 
 
-      <div class="rewiews-carusel slider4 owl-carousel owl-theme " id="slider4" data-aos="fade-right" data-aos-duration="700">
+      <div class="rewiews-carusel slider4 owl-carousel owl-theme " id="slider4" data-aos="fade-right"
+        data-aos-duration="700">
         <!-- отзыв 1 -->
         <div class="carusel-item">
           <div class="top_info">
@@ -563,7 +573,7 @@
             <!-- таб1 -->
             <div class="tab-pane fade show active" id="pills-contact1" role="tabpanel"
               aria-labelledby="pills-contact1-tab">
-              
+
               <div class="left" data-aos="fade-right" data-aos-duration="550">
 
                 <div class="name">
@@ -574,30 +584,37 @@
                 <div class="adress">
                   <h3 class="blue_txt">Адрес</h3>
                   <p>г. Москва ул. Димитрова 20, оф.18.</p>
-                  
+
                 </div>
                 <div class="telephone">
                   <h3 class="blue_txt">Телефон</h3>
                   <p>+7 (499) 403-17-10, +7 (499) 403-17-10</p>
-                  
+
                 </div>
                 <div class="schedule">
                   <h3 class="blue_txt">График работы</h3>
                   <p>Пн-Пт: с 8:00 до 20:00</p>
-                  
+
                 </div>
                 <div class="button">
-                  <button class="btn btn-call " data-bs-toggle="modal" data-bs-target="#CallModal">Получить консультацию</button>
+                  <button class="btn btn-call " data-bs-toggle="modal" data-bs-target="#CallModal">Получить
+                    консультацию</button>
                 </div>
               </div>
-            <div class="right" data-aos="fade-left" data-aos-duration="550">
-              <!-- <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/213/moscow/house/ulitsa_bolshaya_yakimanka_18/Z04YcAZkTkwAQFtvfXtyeXVrZg==/?ll=37.615620%2C55.738487&utm_medium=mapframe&utm_source=maps&z=17.09" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Димитрова, 20 — Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCU4YCXeWC" width="570" height="310" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div> -->
+              <div class="right" data-aos="fade-left" data-aos-duration="550">
+                <!-- <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/213/moscow/house/ulitsa_bolshaya_yakimanka_18/Z04YcAZkTkwAQFtvfXtyeXVrZg==/?ll=37.615620%2C55.738487&utm_medium=mapframe&utm_source=maps&z=17.09" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Димитрова, 20 — Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCU4YCXeWC" width="570" height="310" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div> -->
 
 
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3176.8193514690374!2d37.60933689905935!3d55.73503870993776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b068f61b26d%3A0x90a7b97a365f6b4a!2z0YPQuy4g0JHQvtC70YzRiNCw0Y8g0K_QutC40LzQsNC90LrQsCwgMzYsINCc0L7RgdC60LLQsCwg0KDQvtGB0YHQuNGPLCAxMTkwNDk!5e0!3m2!1sru!2sua!4v1620225468014!5m2!1sru!2sua" width="570" height="420" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3176.8193514690374!2d37.60933689905935!3d55.73503870993776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b068f61b26d%3A0x90a7b97a365f6b4a!2z0YPQuy4g0JHQvtC70YzRiNCw0Y8g0K_QutC40LzQsNC90LrQsCwgMzYsINCc0L7RgdC60LLQsCwg0KDQvtGB0YHQuNGPLCAxMTkwNDk!5e0!3m2!1sru!2sua!4v1620225468014!5m2!1sru!2sua" width="570" height="420" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
 
 
-            </div>
+
+                <div class="maps" id="map1" data-coordinates="55.75396, 37.620393" data-number=1 style="width: 570px; height: 420px"></div>
+
+                
+
+
+              </div>
 
             </div>
 
@@ -614,28 +631,28 @@
                 <div class="adress">
                   <h3 class="blue_txt">Адрес</h3>
                   <p>г. Москва ул. Димитрова 20, оф.18.</p>
-                  
+
                 </div>
                 <div class="telephone">
                   <h3 class="blue_txt">Телефон</h3>
                   <p>+7 (499) 403-17-10, +7 (499) 403-17-10</p>
-                  
+
                 </div>
                 <div class="schedule">
                   <h3 class="blue_txt">График работы</h3>
                   <p>Пн-Пт: с 8:00 до 20:00</p>
-                  
+
                 </div>
 
               </div>
-            <div class="right">
-              <!-- <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/213/moscow/house/ulitsa_bolshaya_yakimanka_18/Z04YcAZkTkwAQFtvfXtyeXVrZg==/?ll=37.615620%2C55.738487&utm_medium=mapframe&utm_source=maps&z=17.09" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Димитрова, 20 — Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCU4YCXeWC" width="570" height="310" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div> -->
+              <div class="right">
+                <!-- <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/213/moscow/house/ulitsa_bolshaya_yakimanka_18/Z04YcAZkTkwAQFtvfXtyeXVrZg==/?ll=37.615620%2C55.738487&utm_medium=mapframe&utm_source=maps&z=17.09" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Димитрова, 20 — Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCU4YCXeWC" width="570" height="310" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div> -->
 
 
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3176.8193514690374!2d37.60933689905935!3d55.73503870993776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b068f61b26d%3A0x90a7b97a365f6b4a!2z0YPQuy4g0JHQvtC70YzRiNCw0Y8g0K_QutC40LzQsNC90LrQsCwgMzYsINCc0L7RgdC60LLQsCwg0KDQvtGB0YHQuNGPLCAxMTkwNDk!5e0!3m2!1sru!2sua!4v1620225468014!5m2!1sru!2sua" width="570" height="310" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3176.8193514690374!2d37.60933689905935!3d55.73503870993776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b068f61b26d%3A0x90a7b97a365f6b4a!2z0YPQuy4g0JHQvtC70YzRiNCw0Y8g0K_QutC40LzQsNC90LrQsCwgMzYsINCc0L7RgdC60LLQsCwg0KDQvtGB0YHQuNGPLCAxMTkwNDk!5e0!3m2!1sru!2sua!4v1620225468014!5m2!1sru!2sua" width="570" height="310" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+                <div class="maps" id="map2" data-coordinates="55.75396, 40.393" data-number=2 style="width: 570px; height: 420px"></div>
 
-
-            </div>
+              </div>
 
 
             </div>
@@ -651,28 +668,31 @@
                 <div class="adress">
                   <h3 class="blue_txt">Адрес</h3>
                   <p>г. Москва ул. Димитрова 20, оф.18.</p>
-                  
+
                 </div>
                 <div class="telephone">
                   <h3 class="blue_txt">Телефон</h3>
                   <p>+7 (499) 403-17-10, +7 (499) 403-17-10</p>
-                  
+
                 </div>
                 <div class="schedule">
                   <h3 class="blue_txt">График работы</h3>
                   <p>Пн-Пт: с 8:00 до 20:00</p>
-                  
+
                 </div>
 
               </div>
-            <div class="right">
-              <!-- <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/213/moscow/house/ulitsa_bolshaya_yakimanka_18/Z04YcAZkTkwAQFtvfXtyeXVrZg==/?ll=37.615620%2C55.738487&utm_medium=mapframe&utm_source=maps&z=17.09" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Димитрова, 20 — Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCU4YCXeWC" width="570" height="310" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div> -->
+              <div class="right">
+                <!-- <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/213/moscow/house/ulitsa_bolshaya_yakimanka_18/Z04YcAZkTkwAQFtvfXtyeXVrZg==/?ll=37.615620%2C55.738487&utm_medium=mapframe&utm_source=maps&z=17.09" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Димитрова, 20 — Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCU4YCXeWC" width="570" height="310" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div> -->
 
 
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3176.8193514690374!2d37.60933689905935!3d55.73503870993776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b068f61b26d%3A0x90a7b97a365f6b4a!2z0YPQuy4g0JHQvtC70YzRiNCw0Y8g0K_QutC40LzQsNC90LrQsCwgMzYsINCc0L7RgdC60LLQsCwg0KDQvtGB0YHQuNGPLCAxMTkwNDk!5e0!3m2!1sru!2sua!4v1620225468014!5m2!1sru!2sua" width="570" height="310" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <!-- <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3176.8193514690374!2d37.60933689905935!3d55.73503870993776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b068f61b26d%3A0x90a7b97a365f6b4a!2z0YPQuy4g0JHQvtC70YzRiNCw0Y8g0K_QutC40LzQsNC90LrQsCwgMzYsINCc0L7RgdC60LLQsCwg0KDQvtGB0YHQuNGPLCAxMTkwNDk!5e0!3m2!1sru!2sua!4v1620225468014!5m2!1sru!2sua"
+                  width="570" height="310" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
 
+                  <div class="maps" id="map3" data-coordinates="25.75396, 60.393" data-number=3 style="width: 570px; height: 420px"></div>
 
-            </div>
+              </div>
 
 
             </div>
@@ -688,28 +708,30 @@
                 <div class="adress">
                   <h3 class="blue_txt">Адрес</h3>
                   <p>г. Москва ул. Димитрова 20, оф.18.</p>
-                  
+
                 </div>
                 <div class="telephone">
                   <h3 class="blue_txt">Телефон</h3>
                   <p>+7 (499) 403-17-10, +7 (499) 403-17-10</p>
-                  
+
                 </div>
                 <div class="schedule">
                   <h3 class="blue_txt">График работы</h3>
                   <p>Пн-Пт: с 8:00 до 20:00</p>
-                  
+
                 </div>
 
               </div>
-            <div class="right">
-              <!-- <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/213/moscow/house/ulitsa_bolshaya_yakimanka_18/Z04YcAZkTkwAQFtvfXtyeXVrZg==/?ll=37.615620%2C55.738487&utm_medium=mapframe&utm_source=maps&z=17.09" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Димитрова, 20 — Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCU4YCXeWC" width="570" height="310" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div> -->
+              <div class="right">
+                <!-- <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/213/moscow/house/ulitsa_bolshaya_yakimanka_18/Z04YcAZkTkwAQFtvfXtyeXVrZg==/?ll=37.615620%2C55.738487&utm_medium=mapframe&utm_source=maps&z=17.09" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Димитрова, 20 — Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCU4YCXeWC" width="570" height="310" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div> -->
 
 
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3176.8193514690374!2d37.60933689905935!3d55.73503870993776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b068f61b26d%3A0x90a7b97a365f6b4a!2z0YPQuy4g0JHQvtC70YzRiNCw0Y8g0K_QutC40LzQsNC90LrQsCwgMzYsINCc0L7RgdC60LLQsCwg0KDQvtGB0YHQuNGPLCAxMTkwNDk!5e0!3m2!1sru!2sua!4v1620225468014!5m2!1sru!2sua" width="570" height="310" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <!-- <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3176.8193514690374!2d37.60933689905935!3d55.73503870993776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b068f61b26d%3A0x90a7b97a365f6b4a!2z0YPQuy4g0JHQvtC70YzRiNCw0Y8g0K_QutC40LzQsNC90LrQsCwgMzYsINCc0L7RgdC60LLQsCwg0KDQvtGB0YHQuNGPLCAxMTkwNDk!5e0!3m2!1sru!2sua!4v1620225468014!5m2!1sru!2sua"
+                  width="570" height="310" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+                  <div class="maps" id="map4" data-coordinates="65.75396, 60.393" data-number=4 style="width: 570px; height: 420px"></div>
 
-
-            </div>
+              </div>
 
 
             </div>
@@ -759,14 +781,14 @@
       </div>
       <div class="footer_botomn">
         <div class="left">
-          © Prudnikov, 2021 
+          © Prudnikov, 2021
         </div>
         <div class="right">
           <a href="#" data-bs-toggle="modal" data-bs-target="#licenseModal">Политика конфидециальности</a>
         </div>
       </div>
 
-      
+
 
 
     </div>
@@ -782,6 +804,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
     integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
     crossorigin="anonymous"></script>
+    <!-- ГАЛЕРЕЯ -->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <!-- owl карусель -->
   <script>
     $('.slider1').owlCarousel({

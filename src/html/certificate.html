@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сертификаты</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+</head>
+
+<body>
+
+  <section class="content-screen certificate_p" style="background-image: url(img/fon_content.png);">
+    <div id="shadow"></div>
+    <div class="container">
+
+      <div class="logo_hiden">
+        <a href="#"><img src="img/logo.svg" alt="Prudnikov"></a>
+      </div>
+      <menu id="main-menu">
+        <div class="main-menu_top">
+
+          <div class="logo">
+            <a href="#"><img src="img/logo.svg" alt="Prudnikov"></a>
+          </div>
+
+          <div class="search">
+            <input class="search" type="text" placeholder="Поиск">
+            <img src="img/search.svg" alt="search">
+          </div>
+
+
+
+          <div class="mail_item">
+            <img src="img/letter.svg" alt="letter">
+            <a href="mailto:vashapochta@gmail.com"> vashapochta@gmail.com</a>
+          </div>
+
+          <div class="telephone_item">
+            <img src="img/telephone.svg" alt="phone"> <a href="tel:+7 (499) 403-17-10"> +7 (499)
+              403-17-10</a>
+          </div>
+
+          <div class="language dropdown " id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="img/planet.svg" alt="планета">
+            <button class="dropdown-toggle" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">Ru <img
+                src="img/arrow-down.svg" alt="стрелка вниз">
+
+            </button>
+            <div class="change_lang dropdown-menu" aria-labelledby="dropdownMenu2">
+              <p>En</p>
+            </div>
+          </div>
+
+          <button class="btn btn-call wow fadeInDown " data-bs-toggle="modal" data-bs-target="#CallModal">Оставить
+            заявку</button>
+
+        </div>
+
+
+        <div class="main_menu_bottomn">
+          <div> <a href="#">Главная</a></div>
+          <div> <a href="#">О враче</a> </div>
+          <div><a href="#">Лечение с операцией</a></div>
+          <div><a href="#">Лечение без операции</a></div>
+          <div><a href="#">Отзывы</a></div>
+          <div><a href="#">Контакты</a></div>
+
+        </div>
+
+      </menu>
+
+      <button id="burger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Modal call-->
+      <div class="modal fade" id="CallModal" tabindex="-1" aria-labelledby="CallModal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="form " style="background-image: url(img/carabineSm.png);">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <h4>Остались вопросы?
+              </h4>
+              <p>Получите бесплатную консультацию</p>
+              <form action="" method="POST">
+                <input type="text" minlength="1" name="name" id="name" placeholder="Ваше имя" required>
+                <input type="tel" minlength="10" name="telephone" id="telephone" placeholder="Ваш номер телефона"
+                  required>
+
+                <textarea cols="32" name="message" rows="3" placeholder="Сообщение"></textarea>
+                <button type="submit" class="btn btn-submit">
+                  отправить заявку
+                </button>
+                <label for="checkbox">
+                  <input id="checkbox" class="custom-checkbox" type="checkbox" checked required>
+                  <span class="check">
+                    <img src="img/check-ltl.svg" alt=""></span>
+
+                  Принимаю &nbsp <a href="#" data-bs-toggle="modal" data-bs-target="#licenseModal">условия обработки
+                    информации</a>
+                </label>
+
+                <!--  -->
+
+
+              </form>
+
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+      <!-- // -->
+
+      <div class="main-content " data-aos="fade-right" data-aos-duration="700">
+
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Главная</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Сертификаты</li>
+          </ol>
+        </nav>
+
+        <h1>
+          <span class="bold_txt">Сертификаты</span>
+
+        </h1>
+
+      </div>
+
+    </div>
+
+
+
+    <section class="certificate">
+      <div class="container">
+        <div class="certificate_glery">
+          <!-- сертификат 1 -->
+
+          <div class="galery_item">
+            <div class="wrapper" style="background-image: url(img/certificate_bs.png);">
+              <a data-fancybox="gallery" href="img/cert1.jpg">
+                <img src="img/cert1.jpg" alt="Сертификат">
+              </a>
+            </div>
+
+          </div>
+          <!-- сертификат 2 -->
+          <div class="galery_item">
+            <div class="wrapper" style="background-image: url(img/certificate_bs.png);">
+              <a data-fancybox="gallery" href="img/cert2.jpg">
+                <img src="img/cert2.jpg" alt="Сертификат">
+              </a>
+            </div>
+          </div>
+          <!-- сертификат 3 -->
+          <div class="galery_item">
+            <div class="wrapper" style="background-image: url(img/certificate_bs.png);">
+              <a data-fancybox="gallery" href="img/cert3.jpg">
+                <img src="img/cert3.jpg" alt="Сертификат">
+              </a>
+            </div>
+          </div>
+          <!-- сертификат 4 -->
+          <div class="galery_item">
+            <div class="wrapper" style="background-image: url(img/certificate_bs.png);">
+              <a data-fancybox="gallery" href="img/cert1.jpg">
+                <img src="img/cert1.jpg" alt="Сертификат">
+              </a>
+            </div>
+          </div>
+          
+
+        </div>
+
+      </div>
+
+    </section>
+  </section>
+
+
+
+
+
+
+
+
+
+
+  <footer>
+    <div class="container">
+      <div class="footer_top">
+        <div class="col">
+          <img src="img/logo_foter.png" alt="logo">
+        </div>
+        <div class="col">
+          <div class=""><a href="#">Главная</a></div>
+          <div class=""><a href="#">О враче</a></div>
+          <div class=""><a href="#">Лечение с операцией</a></div>
+        </div>
+        <div class="col">
+          <div class=""><a href="#">Лечение без операции</a></div>
+          <div class=""><a href="#">Отзывы</a></div>
+          <div class=""><a href="#">Контакты</a></div>
+        </div>
+        <div class="col ">
+          <div class="telephone">
+            <img src="img/telephone_f.svg" alt="telephone">
+            <a href="tel:+7 (499) 403-17-10">+7 (499) 403-17-10</a>
+          </div>
+          <div class="email">
+            <img src="img/letter_f.svg" alt="letter">
+            <a href="mailto:vashapochta@gmail.com">vashapochta@gmail.com</a>
+          </div>
+        </div>
+        <div class="col">
+          <button class="btn-footer">Оставить заявку</button>
+        </div>
+      </div>
+      <div class="footer_botomn">
+        <div class="left">
+          © Prudnikov, 2021
+        </div>
+        <div class="right">
+          <a href="#" data-bs-toggle="modal" data-bs-target="#licenseModal">Политика конфидециальности</a>
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </footer>
+
+
+
+  <!-- OWL -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous"></script>
+
+  <!-- ГАЛЕРЕЯ -->
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <!-- owl карусель -->
+  <script>
+    $('.slider1').owlCarousel({
+      loop: true,
+      // autoplay: true,
+      autoplayTimeout: 3000,
+      stagePadding: 0,
+      // center: true,
+      nav: true,
+      navText: [$('.arrow-left '), $('.arrow-right')],
+      dots: false,
+      margin: 20,
+
+      responsive: {
+        0: {
+          items: 1,
+          center: true
+
+        },
+        993: {
+          items: 1,
+          center: true
+
+        },
+        1199: {
+          items: 1,
+          center: true
+
+        },
+        1330: {
+          items: 2,
+          center: false
+
+        }
+      }
+    })
+
+
+    // карусель 2
+    $('.slider2').owlCarousel({
+      loop: true,
+      // autoplay: true,
+      autoplayTimeout: 3000,
+      stagePadding: 0,
+      // center: true,
+      nav: true,
+      navText: [$('.slider-left '), $('.slider-right')],
+      dots: false,
+      margin: 20,
+
+      responsive: {
+        0: {
+          items: 1,
+
+        },
+        1199: {
+          items: 1,
+
+        },
+        1330: {
+          items: 2,
+
+        }
+      }
+    })
+    // карусель 3
+    $('.slider3').owlCarousel({
+      loop: true,
+      // autoplay: true,
+      autoplayTimeout: 3000,
+      stagePadding: 0,
+      // center: true,
+      nav: true,
+      navText: [$('.slider-left2 '), $('.slider-right2')],
+      dots: false,
+      margin: 20,
+
+      responsive: {
+        0: {
+          items: 2,
+
+        },
+        576: {
+          items: 3,
+
+        },
+        1199: {
+          items: 4,
+
+        },
+        1330: {
+          items: 4,
+
+        }
+      }
+    })
+    // карусель 4
+    $('.slider4').owlCarousel({
+      loop: true,
+      // autoplay: true,
+      autoplayTimeout: 3000,
+      stagePadding: 0,
+      // center: true,
+      nav: true,
+      navText: [$('.slider-left3 '), $('.slider-right3')],
+      dots: false,
+      margin: 30,
+
+      responsive: {
+        0: {
+          items: 1,
+
+        },
+        1199: {
+          items: 2,
+
+        },
+        1330: {
+          items: 2,
+
+        }
+      }
+    })
+  </script>
+
+</body>
+
+</html>
