@@ -72,6 +72,16 @@ module.exports = {
             template: './src/html/contacts.html',
             inject: 'body'
     }),
+        new HtmlWebpackPlugin({ 
+            filename: 'surg.html',
+            template: './src/html/surg.html',
+            inject: 'body'
+    }),
+        new HtmlWebpackPlugin({ 
+            filename: 'nosurg.html',
+            template: './src/html/nosurg.html',
+            inject: 'body'
+    }),
         new CopyWebpackPlugin({
             patterns: [
                 {
