@@ -1104,9 +1104,9 @@ footer {
             line-height: 16px;
             color: #FFFFFF;
             white-space: nowrap;
-
+            transition: 100ms ease;
             &:hover {
-                color: #FFFFFF;
+                color: #e7e3e3;
             }
         }
     }
@@ -1295,7 +1295,7 @@ footer {
         }
 
         .blue_fon {
-            top: 218px;
+            top: 165px;
             height: 525px;
         }
     }

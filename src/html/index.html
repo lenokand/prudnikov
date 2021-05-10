@@ -70,24 +70,24 @@
 
 
         <div class="main_menu_bottomn">
-          <div> <a href="certificate.html">Главная</a></div>
+          <div> <a href="index.html">Главная</a></div>
           <div class="dropdown"> <a href="second.html" >О враче</a> 
             <a href="#" class="dropdown-toggle" role="button" id="dropdownMenuLink2" data-bs-toggle="dropdown" aria-expanded="false"><img src="img/arrow_menu.svg" alt="стрелка"></a>
           
             <ul class="dropdown-menu " aria-labelledby="dropdownMenuLink2">
-              <li><a class="dropdown-item" href="#">Сертификаты</a></li>
-              <li><a class="dropdown-item" href="#">  Моя практика</a></li>
+              <li><a class="dropdown-item" href="certificate.html">Сертификаты</a></li>
+              <li><a class="dropdown-item" href="articles.html">  Моя практика</a></li>
               
             </ul>
           
           
           </div>
-          <div class="dropdown"> <a href="second.html" >Лечение</a> 
+          <div class="dropdown"> <a href="#" >Лечение</a> 
             <a href="#" class="dropdown-toggle" role="button" id="dropdownMenuLink2" data-bs-toggle="dropdown" aria-expanded="false"><img src="img/arrow_menu.svg" alt="стрелка"></a>
           
             <ul class="dropdown-menu " aria-labelledby="dropdownMenuLink2">
-              <li><a class="dropdown-item" href="#">С операцией</a></li>
-              <li><a class="dropdown-item" href="#">Без операции</a></li>
+              <li><a class="dropdown-item" href="surg.html">С операцией</a></li>
+              <li><a class="dropdown-item" href="nosurg.html">Без операции</a></li>
               
             </ul>
           
@@ -98,7 +98,7 @@
           <div><a href="contacts.html">Контакты</a></div>
 
           
-          <div class="dropdown"> <a href="second.html" >Диагностика и лечение</a> 
+          <div class="dropdown"> <a href="#" >Диагностика и лечение</a> 
             <a href="#" class="dropdown-toggle" role="button" id="dropdownMenuLink2" data-bs-toggle="dropdown" aria-expanded="false"><img src="img/arrow_menu.svg" alt="стрелка"></a>
           
             <ul class="dropdown-menu " aria-labelledby="dropdownMenuLink2">
@@ -211,25 +211,30 @@
         </h4>
         
         <form enctype="multipart/form-data" action="" method="POST">
-          <input type="text" minlength="1" name="name" id="name" placeholder="Ваше имя" required>
-          <input type="email" name="email" value="" id="email"
+          <input type="text" minlength="1" name="name2" id="name2" placeholder="Ваше имя" required>
+          <input type="email" name="email2" value="" id="email2"
           placeholder="Ваш e-mail" required>
-          <input type="tel" minlength="10" name="telephone" id="telephone" placeholder="Номер телефона"
+          <input type="tel" minlength="10" name="telephone2" id="telephone2" placeholder="Номер телефона"
             required>
 
           <textarea cols="32" name="message" rows="3" placeholder="Ваше сообщение"></textarea>
+
+          <!-- загрузка файлов -->
+          <input class="file_load " id="input__file" type="file" name="f" multiple accept="image/*">
           <label class="load_lbl" for="input__file"> 
-            <img src="img/clip.svg" alt=""> 
-            <div class="">Прикрепить файл</div>
+            <img src="img/clip.svg" alt="скрепка"> 
+            <div class="field__file-fake" >Прикрепить файл</div>
           
           </label>
-          <input class="file_load" id="input__file" type="file" name="f" multiple accept="image/*">
+
+         
           
+
           <button class="btn btn-call" type="submit" class="btn btn-submit">
             Оплатить
           </button>
           <label class="checkbox_lbl" for="checkbox">
-            <input id="checkbox" class="custom-checkbox" type="checkbox" checked required>
+            <input id="checkbox2" class="custom-checkbox" type="checkbox" checked required>
            <div>
             Нажимая на кнопку, вы даете согласие
             на обработку своих <a href="#" data-bs-toggle="modal" data-bs-target="#licenseModal"> персональных данных</a>
