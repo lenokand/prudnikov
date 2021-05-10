@@ -144,19 +144,19 @@
                   required>
 
                 <textarea cols="32" name="message" rows="3" placeholder="Ваше сообщение"></textarea>
-                <button type="submit" class="btn btn-submit">
-                  отправить заявку
+                <button class="btn btn-call" type="submit" class="btn btn-submit">
+                  Отправить заявку
                 </button>
-                <label for="checkbox">
+                <label class="checkbox_lbl" for="checkbox">
                   <input id="checkbox" class="custom-checkbox" type="checkbox" checked required>
-                  <span class="check">
-                    <img src="img/check-ltl.svg" alt=""></span>
-
-                    Нажимая на кнопку, вы даете согласие
-                    на обработку своих <a href="#" data-bs-toggle="modal" data-bs-target="#licenseModal"> персональных данных</a>
+                 <div>
+                  Нажимая на кнопку, вы даете согласие
+                  на обработку своих <a href="#" data-bs-toggle="modal" data-bs-target="#licenseModal"> персональных данных</a>
+                 </div>
+                    
                 </label>
 
-                <!--  -->
+                
 
 
               </form>
@@ -198,7 +198,57 @@
 <!-- // -->
 
 <!-- #payModal -->
+<div class="modal fade" id="payModal" tabindex="-1" aria-labelledby="payModal" aria-hidden="true" >
+  <div class="modal-dialog" >
+    <div class="modal-content" style="background-image: url(img/fon_modal.png);">
+      <div class="form " >
+        <button type="button" class="btn_close" data-bs-dismiss="modal" aria-label="Close"> <img src="img/btn_close.svg" alt=""> </button>
+        <h4>Заказать
+         
+          
+         <br> <span class="bold_txt">  консультацию</span>
+          
+        </h4>
+        
+        <form enctype="multipart/form-data" action="" method="POST">
+          <input type="text" minlength="1" name="name" id="name" placeholder="Ваше имя" required>
+          <input type="email" name="email" value="" id="email"
+          placeholder="Ваш e-mail" required>
+          <input type="tel" minlength="10" name="telephone" id="telephone" placeholder="Номер телефона"
+            required>
 
+          <textarea cols="32" name="message" rows="3" placeholder="Ваше сообщение"></textarea>
+          <label class="load_lbl" for="input__file"> 
+            <img src="img/clip.svg" alt=""> 
+            <div class="">Прикрепить файл</div>
+          
+          </label>
+          <input class="file_load" id="input__file" type="file" name="f" multiple accept="image/*">
+          
+          <button class="btn btn-call" type="submit" class="btn btn-submit">
+            Оплатить
+          </button>
+          <label class="checkbox_lbl" for="checkbox">
+            <input id="checkbox" class="custom-checkbox" type="checkbox" checked required>
+           <div>
+            Нажимая на кнопку, вы даете согласие
+            на обработку своих <a href="#" data-bs-toggle="modal" data-bs-target="#licenseModal"> персональных данных</a>
+           </div>
+              
+          </label>
+
+          
+
+
+        </form>
+
+      </div>
+
+    </div>
+
+
+  </div>
+</div>
 <!-- // -->
 
 

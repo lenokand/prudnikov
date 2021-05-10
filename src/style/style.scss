@@ -2330,12 +2330,15 @@ nav.nav_pagination {
                 form {
                     display: flex;
                     flex-direction: column;
+
                     textarea,
                     input {
                         background: #FFFFFF;
                         border-radius: 60px;
                         border: none;
                         margin-bottom: 10px;
+                        padding: 25px 35px;
+
                         &:focus {
                             border: none;
                             outline: none;
@@ -2344,7 +2347,79 @@ nav.nav_pagination {
                         &:valid {
                             background: #FFF;
                         }
+
+                        &::placeholder {
+                            font-weight: normal;
+                            font-size: 14px;
+                            line-height: 112.7%;
+                            color: #B5B5B5;
+                        }
+
+                        &.file_load {
+                            background: none;
+                        }
+
+
                     }
+
+                    textarea {
+                        border-radius: 24px;
+                        resize: none;
+
+                    }
+
+                    button {
+                        padding: 30px 20px;
+                        text-align: center;
+                        margin-bottom: 20px;
+
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 112.7%;
+                        color: #FFFFFF;
+
+                    }
+
+                    .checkbox_lbl {
+                        display: flex;
+                        align-items: center;
+                        max-width: 225px;
+                        margin: auto;
+                        font-weight: normal;
+                        font-size: 10px;
+                        line-height: 132.7%;
+                        color: #000000;
+
+                        input {
+                            margin-right: 9px;
+                        }
+                    }
+
+                    .load_lbl {
+                        display: flex;
+                        align-items: center;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 132.7%;
+                        color: #4B7FE3;
+                        margin: auto;
+                        cursor: pointer;
+                        margin-top: 5px;
+                        margin-bottom: 15px;
+                        img{
+                            margin-right: 3px;
+                           
+                        }
+                    }
+                    .file_load{
+                        opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  width: 0;
+  padding: 0;
+  margin: 0;
+                    }
+
                 }
             }
         }
@@ -2354,250 +2429,22 @@ nav.nav_pagination {
 
 }
 
+@media screen and (max-width:550px) {
+
+    .modal {
 
 
+        .modal-dialog {
+            .modal-content {
 
-// .modal.licenseModal {
-//     z-index: 9999;
-// }
+                padding: 15px 20px;
+                padding-top: 50px;
 
-// .modal-dialog-scrollable {
+            }
+        }
+    }
 
-//     max-width: 80%;
-// }
-
-// @media screen and (max-width: 600px) {
-//     .screen2 .container .serveces {
-//         flex-direction: row;
-
-//         .left-services {
-//             max-width: 100%;
-
-//             .left-top {
-//                 width: 100%;
-//                 border-radius: 6px;
-//                 // background-position-x: -100px;
-//                 background-repeat: no-repeat;
-//                 background-size: cover;
-//                 height: auto;
-//             }
-
-//             .left-bottomn {
-//                 width: 100%;
-//                 border-radius: 6px;
-//                 background-repeat: no-repeat;
-//                 background-size: cover;
-//                 height: auto;
-//             }
-//         }
-
-//         .right-services {
-//             max-width: 100%;
-
-//             .left-top {
-//                 width: 100%;
-//                 border-radius: 6px;
-//                 background-repeat: no-repeat;
-//                 background-size: cover;
-//                 height: auto;
-//             }
-
-//             .left-bottomn {
-//                 width: 100%;
-//                 border-radius: 6px;
-//                 background-repeat: no-repeat;
-//                 background-size: cover;
-//                 height: auto;
-//             }
-//         }
-//     }
-// }
-
-// @media screen and (max-width: 575px) {
-//     .modal-dialog-scrollable {
-
-//         max-width: 95%;
-//     }
-// }
-
-// #requerModal {
-//     .form {
-//         height: auto;
-//     }
-// }
-
-// // Окно заказать обратный звонок
-// .modal {
-//     z-index: 9998;
-// }
-
-// .modal-dialog {
-//     z-index: 9998;
-
-//     .form {
-//         display: flex;
-//         flex-direction: column;
-
-//         height: auto;
-//     }
-
-//     .btn-close {
-//         width: 38px;
-//         height: 38px;
-//         align-self: flex-end;
-//         position: absolute;
-//         top: $gap;
-//         right: -55px;
-//     }
+}
 
 
-
-// }
-
-
-
-// .form {
-//     
-//     border-radius: 12px;
-//     overflow: hidden;
-//     box-shadow: 0px 6px 58px rgba(0, 0, 0, 0.1), 0 0 0 6px #FFF;
-//     border: 2px dashed #D8D8D8;
-//     width: 570px;
-//     height: 619px;
-//     padding: 4*$gap 6*$gap 4*$gap 4*$gap;
-
-//     h4 {
-//         font-style: normal;
-//         font-weight: 800;
-//         font-size: 24px;
-//         line-height: 30px;
-//         color: #000000;
-//     }
-
-//     p {
-//         font-style: normal;
-//         font-weight: normal;
-//         font-size: 24px;
-//         line-height: 30px;
-//         color: #000000;
-//     }
-
-//     form {
-//         display: flex;
-//         flex-direction: column;
-//         margin-top: 3*$gap;
-
-//         .btn-submit {
-//             max-width: 226px;
-//             margin-top: 2*$gap;
-//             margin-bottom: 0.8*$gap;
-//         }
-
-//         a {
-//             color: #E04100;
-//         }
-
-//         label {
-//             display: flex;
-//             align-items: center;
-//             font-style: normal;
-//             font-weight: normal;
-//             font-size: 10px;
-//             line-height: 12px;
-//             color: #949494;
-//         }
-
-//         .custom-checkbox {
-//             position: absolute;
-//             // z-index: -1;
-//             opacity: 0;
-//             width: 70px;
-//         }
-
-
-
-//         .custom-checkbox {
-//             ~span {
-
-//                 color: #FFF;
-//                 display: inline-block;
-//                 width: 12px;
-//                 height: 12px;
-//                 background: #FFF;
-//                 border: 1px solid #D8D8D8;
-//                 box-sizing: border-box;
-//                 border-radius: 3px;
-//                 margin-right: .5*$gap;
-
-//                 img {
-//                     display: none;
-
-//                 }
-//             }
-
-
-//         }
-
-//         .custom-checkbox:checked {
-//             ~span {
-//                 color: #FFF;
-//                 display: inline-block;
-//                 width: 12px;
-//                 height: 12px;
-//                 background: #FFF;
-//                 border: 1px solid #D8D8D8;
-//                 box-sizing: border-box;
-//                 border-radius: 3px;
-//                 display: flex;
-//                 align-items: center;
-//                 justify-content: center;
-//                 margin-right: .5*$gap;
-
-//                 img {
-//                     display: block;
-//                     width: 6px;
-//                     height: 4px;
-//                 }
-//             }
-//         }
-
-//     }
-
-//     input {
-//         border: 1px solid #D8D8D8;
-//         box-sizing: border-box;
-//         border-radius: 12px;
-//         padding: $gap 2*$gap;
-//         margin-bottom: 10px;
-
-//         &:focus {
-//             border: 1px solid #EDA689 !important;
-//             outline: none;
-//         }
-
-//         &:valid {
-//             background: #FEF7F4;
-//         }
-
-//     }
-
-//     textarea {
-//         border: 1px solid #D8D8D8;
-//         box-sizing: border-box;
-//         border-radius: 12px;
-//         padding: $gap 2*$gap;
-//         margin-bottom: 10px;
-//         overflow: auto;
-//         resize: none;
-
-//         &:focus {
-//             border: 1px solid #EDA689 !important;
-//             outline: none;
-//         }
-
-
-//     }
-
-
-// }
-// 
+// -модальные окна
