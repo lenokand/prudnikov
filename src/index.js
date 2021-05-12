@@ -3,7 +3,16 @@ import 'bootstrap';
 import "./js/libs";
 // import './style/style.scss'
 import AOS from 'aos';
-AOS.init();
+
+AOS.init({
+  disable: function () {
+    var maxWidth = 768;
+    return window.innerWidth < maxWidth;
+  }
+});
+
+
+
 const burger = document.getElementById('burger-menu')
 const shadow = document.getElementById('shadow')
 const menu = document.getElementById('main-menu')
@@ -60,33 +69,6 @@ mapList.forEach((elementMap, index) =>{
 })
 
 
-
-
-
-// let myUnicMap = document.getElementById('map')
-
-// var coordinate = myUnicMap.dataset.coordinates
-// let coordinate2 = coordinate.split(', ', 2)
-// let lat=coordinate2[0] 
-// let lng=coordinate2[1] 
-
-// var myMap;
-//                   // при успешной загрузке API выполняется соответствующая функция
-//                   ymaps.ready(function () {
-//                     // создание экземпляра карты и его привязка к контейнеру с id="map"
-//                     myMap = new ymaps.Map("map", {
-//                       // центр карты
-//                       center: lat, lng
-//                       ,
-//                       // коэффициент масштабирования
-//                       zoom: 8,
-//                       // тип карты, по умолчанию используется тип карты "схема"
-//                       //type: "yandex#map",
-//                     });
-//                   }); // end ymaps.ready
-
-// загрузка файлов
-
 let fields = document.querySelectorAll('.file_load');
 
 
@@ -106,4 +88,6 @@ Array.prototype.forEach.call(fields, function (input) {
       label.querySelector('.field__file-fake').innerText = labelVal;
   });
 });
+
+
 

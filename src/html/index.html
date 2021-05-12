@@ -14,11 +14,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
     integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
     crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
-     />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 </head>
 
-<body>
+<body >
 
   <section class="main-screen" style="background-image: url(img/fon_top.png);">
     <div id="shadow"></div>
@@ -57,7 +56,9 @@
 
             </button>
             <div class="change_lang dropdown-menu" aria-labelledby="dropdownMenu2">
-              <a href="#"><p>En</p></a>
+              <a href="#">
+                <p>En</p>
+              </a>
             </div>
           </div>
 
@@ -69,51 +70,54 @@
         </div>
 
 
-        <div class="main_menu_bottomn">
+        <div class="main_menu_bottomn fixed_block" >
           <div> <a href="index.html">Главная</a></div>
-          <div class="dropdown"> <a href="second.html" >О враче</a> 
-            <a href="#" class="dropdown-toggle" role="button" id="dropdownMenuLink2" data-bs-toggle="dropdown" aria-expanded="false"><img src="img/arrow_menu.svg" alt="стрелка"></a>
-          
+          <div class="dropdown"> <a href="second.html">О враче</a>
+            <a href="#" class="dropdown-toggle" role="button" id="dropdownMenuLink2" data-bs-toggle="dropdown"
+              aria-expanded="false"><img src="img/arrow_menu.svg" alt="стрелка"></a>
+
             <ul class="dropdown-menu " aria-labelledby="dropdownMenuLink2">
               <li><a class="dropdown-item" href="certificate.html">Сертификаты</a></li>
-              <li><a class="dropdown-item" href="articles.html">  Моя практика</a></li>
-              
+              <li><a class="dropdown-item" href="articles.html"> Моя практика</a></li>
+
             </ul>
-          
-          
+
+
           </div>
-          <div class="dropdown"> <a href="#" >Лечение</a> 
-            <a href="#" class="dropdown-toggle" role="button" id="dropdownMenuLink2" data-bs-toggle="dropdown" aria-expanded="false"><img src="img/arrow_menu.svg" alt="стрелка"></a>
-          
+          <div class="dropdown"> <a href="second.html">Лечение</a>
+            <a href="#" class="dropdown-toggle" role="button" id="dropdownMenuLink2" data-bs-toggle="dropdown"
+              aria-expanded="false"><img src="img/arrow_menu.svg" alt="стрелка"></a>
+
             <ul class="dropdown-menu " aria-labelledby="dropdownMenuLink2">
               <li><a class="dropdown-item" href="surg.html">С операцией</a></li>
               <li><a class="dropdown-item" href="nosurg.html">Без операции</a></li>
-              
+
             </ul>
-          
-          
+
+
           </div>
 
           <div><a href="reweiws.html">Отзывы</a></div>
           <div><a href="contacts.html">Контакты</a></div>
 
-          
-          <div class="dropdown"> <a href="#" >Диагностика и лечение</a> 
-            <a href="#" class="dropdown-toggle" role="button" id="dropdownMenuLink2" data-bs-toggle="dropdown" aria-expanded="false"><img src="img/arrow_menu.svg" alt="стрелка"></a>
-          
+
+          <div class="dropdown"> <a href="articles.html">Диагностика и лечение</a>
+            <a href="#" class="dropdown-toggle" role="button" id="dropdownMenuLink2" data-bs-toggle="dropdown"
+              aria-expanded="false"><img src="img/arrow_menu.svg" alt="стрелка"></a>
+
             <ul class="dropdown-menu " aria-labelledby="dropdownMenuLink2">
-              <li><a class="dropdown-item" href="#">С операцией</a></li>
-              <li><a class="dropdown-item" href="#">Без операции</a></li>
-              
+              <li><a class="dropdown-item" href="second.html">Заболевание</a></li>
+              <li><a class="dropdown-item" href="second.html">Симптомы</a></li>
+
             </ul>
-          
-          
+
+
           </div>
 
 
           <div><a href="faq.html">Часто задаваемые вопросы</a></div>
           <div><a href="#" data-bs-toggle="modal" data-bs-target="#payModal">Получить платную консультацию</a></div>
-      
+
 
         </div>
 
@@ -126,22 +130,21 @@
       </button>
 
       <!-- Modal call-->
-      <div class="modal fade" id="CallModal" tabindex="-1" aria-labelledby="CallModal" aria-hidden="true" >
-        <div class="modal-dialog" >
+      <div class="modal fade" id="CallModal" tabindex="-1" aria-labelledby="CallModal" aria-hidden="true">
+        <div class="modal-dialog">
           <div class="modal-content" style="background-image: url(img/fon_modal.png);">
-            <div class="form " >
-              <button type="button" class="btn_close" data-bs-dismiss="modal" aria-label="Close"> <img src="img/btn_close.svg" alt=""> </button>
+            <div class="form ">
+              <button type="button" class="btn_close" data-bs-dismiss="modal" aria-label="Close"> <img
+                  src="img/btn_close.svg" alt=""> </button>
               <h4>Оставьте заявку,
-               <br> <span class="bold_txt"> на обратный звонок</span>
-                
+                <br> <span class="bold_txt"> на обратный звонок</span>
+
               </h4>
-              
+
               <form action="" method="POST">
                 <input type="text" minlength="1" name="name" id="name" placeholder="Ваше имя" required>
-                <input type="email" name="email" value="" id="email"
-                placeholder="Ваш e-mail" required>
-                <input type="tel" minlength="10" name="telephone" id="telephone" placeholder="Номер телефона"
-                  required>
+                <input type="email" name="email" value="" id="email" placeholder="Ваш e-mail" required>
+                <input type="tel" minlength="10" name="telephone" id="telephone" placeholder="Номер телефона" required>
 
                 <textarea cols="32" name="message" rows="3" placeholder="Ваше сообщение"></textarea>
                 <button class="btn btn-call" type="submit" class="btn btn-submit">
@@ -149,14 +152,15 @@
                 </button>
                 <label class="checkbox_lbl" for="checkbox">
                   <input id="checkbox" class="custom-checkbox" type="checkbox" checked required>
-                 <div>
-                  Нажимая на кнопку, вы даете согласие
-                  на обработку своих <a href="#" data-bs-toggle="modal" data-bs-target="#licenseModal"> персональных данных</a>
-                 </div>
-                    
+                  <div>
+                    Нажимая на кнопку, вы даете согласие
+                    на обработку своих <a href="#" data-bs-toggle="modal" data-bs-target="#licenseModal"> персональных
+                      данных</a>
+                  </div>
+
                 </label>
 
-                
+
 
 
               </form>
@@ -171,90 +175,144 @@
       <!-- // -->
 
 
-<!-- #licenseModal -->
- <!-- Условия лиц соглашения -->
- <div class="modal fade" id="licenseModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
- aria-labelledby="licenseModal" aria-hidden="true">
- <div class="modal-dialog modal-dialog-scrollable ">
-     <div class="modal-content">
-         <div class="modal-header">
-             <h5 class="modal-title" id="licenseModal">Условия обработки информации
-             </h5>
-             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-         </div>
-         <div class="modal-body">
-             Данная политика конфиденциальности относится к сайту с доменным именем _________ и его поддоменам. Страница содержит сведения о том, какую информацию администрация сайта или третьи лица могут получать, когда пользователь (вы) посещаете его. Данные, которые собираются при посещении Персональные данные Персональные данные при посещении сайта передаются пользователем добровольно, к ним могут относиться: имя, фамилия, отчество, номера телефонов, адреса электронной почты, адреса для доставки товаров или оказания услуг, реквизиты компании, которую представляет пользователь, должность в компании, которую представляет пользователь, аккаунты в социальных сетях, а также — прочие, заполняемые поля форм. Эти данные собираются в целях оказания услуг или продажи товаров, возможности связи с пользователем или иной активности пользователя на сайте, а также, чтобы отправлять пользователю информацию, которую он согласился получать. Мы не проверяем достоверность оставляемых данных и не гарантируем качественного исполнения заказов, оказания услуг или обратной связи с нами при предоставлении некорректных сведений. Данные собираются имеющимися на сайте формами для заполнения (например, регистрации, оформления заказа, подписки, оставления отзыва, вопроса, обратной связи и иными). Формы, установленные на сайте, могут передавать данные как напрямую на сайт, так и на сайты сторонних организаций (скрипты сервисов сторонних организаций). Данные могут собираться через технологию cookies (куки) как непосредственно сайтом, так и скриптами сервисов сторонних организаций. Эти данные собираются автоматически, отправку этих данных можно запретить, отключив cookies (куки) в браузере, в котором открывается сайт. Не персональные данные Кроме персональных данных при посещении сайта собираются не персональные данные, их сбор происходит автоматически веб-сервером, на котором расположен сайт, средствами CMS (системы управления сайтом), скриптами сторонних организаций, установленными на сайте. К данным, собираемым автоматически, относятся: IP адрес и страна его регистрации, имя домена, с которого вы к нам пришли, переходы посетителей с одной страницы сайта на другую, информация, которую ваш браузер предоставляет добровольно при посещении сайта, cookies (куки), фиксируются посещения, иные данные, собираемые счетчиками аналитики сторонних организаций, установленными на сайте. Эти данные носят неперсонифицированный характер и направлены на улучшение обслуживания клиентов, улучшения удобства использования сайта, анализа статистики посещаемости. Предоставление данных третьим лицам Мы не раскрываем личную информацию пользователей компаниям, организациям и частным лицам, не связанным с нами. Исключение составляют случаи, перечисленные ниже. Данные пользователей в общем доступе Персональные данные пользователя могут публиковаться в общем доступе в соответствии с функционалом сайта, например, при оставлении отзывов / вопросов, может публиковаться указанное пользователем имя, такая активность на сайте является добровольной, и пользователь своими действиями дает согласие на такую публикацию. По требованию закона Информация может быть раскрыта в целях воспрепятствования мошенничеству или иным противоправным действиям; по требованию законодательства и в иных случаях, предусмотренных законами РФ. Для оказания услуг, выполнения обязательств Пользователь соглашается с тем, что персональная информация может быть передана третьим лицам в целях оказания заказанных на сайте услуг, выполнении иных обязательств перед пользователем. К таким лицам, например, относятся курьерская служба, почтовые службы, службы грузоперевозок и иные. Сервисам сторонних организаций, установленным на сайте На сайте могут быть установлены формы, собирающие персональную информацию других организаций, в этом случае сбор, хранение и защита персональной информации пользователя осуществляется сторонними организациями в соответствии с их политикой конфиденциальности. Сбор, хранение и защита полученной от сторонней организации информации осуществляется в соответствии с настоящей политикой конфиденциальности. Как мы защищаем вашу информацию Мы принимаем соответствующие меры безопасности по сбору, хранению и обработке собранных данных для защиты их от несанкционированного доступа, изменения, раскрытия или уничтожения, ограничиваем нашим сотрудникам, подрядчикам и агентам доступ к персональным данным, постоянно совершенствуем способы сбора, хранения и обработки данных, включая физические меры безопасности, для противодействия несанкционированному доступу к нашим системам. Ваше согласие с этими условиями Используя сайт, вы выражаете свое согласие с этой политикой конфиденциальности. Если вы не согласны с этой политикой, пожалуйста, не используйте его. Ваше дальнейшее использование сайта после внесения изменений в настоящую политику будет рассматриваться как ваше согласие с этими изменениями. Отказ от ответственности Политика конфиденциальности не распространяется ни на какие другие сайты и не применима к веб-сайтам третьих лиц, которые могут содержать упоминание о нашем сайте и с которых могут делаться ссылки на сайт, а также ссылки с этого сайта на другие сайты сети интернет. Мы не несем ответственности за действия других веб-сайтов. Изменения в политике конфиденциальности Мы имеем право по своему усмотрению обновлять данную политику конфиденциальности в любое время. Используя сайт, вы соглашаетесь с принятием на себя ответственности за периодическое ознакомление с политикой конфиденциальности и изменениями в ней.
+      <!-- #licenseModal -->
+      <!-- Условия лиц соглашения -->
+      <div class="modal fade" id="licenseModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="licenseModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable ">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="licenseModal">Условия обработки информации
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Данная политика конфиденциальности относится к сайту с доменным именем _________ и его поддоменам.
+              Страница содержит сведения о том, какую информацию администрация сайта или третьи лица могут получать,
+              когда пользователь (вы) посещаете его. Данные, которые собираются при посещении Персональные данные
+              Персональные данные при посещении сайта передаются пользователем добровольно, к ним могут относиться: имя,
+              фамилия, отчество, номера телефонов, адреса электронной почты, адреса для доставки товаров или оказания
+              услуг, реквизиты компании, которую представляет пользователь, должность в компании, которую представляет
+              пользователь, аккаунты в социальных сетях, а также — прочие, заполняемые поля форм. Эти данные собираются
+              в целях оказания услуг или продажи товаров, возможности связи с пользователем или иной активности
+              пользователя на сайте, а также, чтобы отправлять пользователю информацию, которую он согласился получать.
+              Мы не проверяем достоверность оставляемых данных и не гарантируем качественного исполнения заказов,
+              оказания услуг или обратной связи с нами при предоставлении некорректных сведений. Данные собираются
+              имеющимися на сайте формами для заполнения (например, регистрации, оформления заказа, подписки, оставления
+              отзыва, вопроса, обратной связи и иными). Формы, установленные на сайте, могут передавать данные как
+              напрямую на сайт, так и на сайты сторонних организаций (скрипты сервисов сторонних организаций). Данные
+              могут собираться через технологию cookies (куки) как непосредственно сайтом, так и скриптами сервисов
+              сторонних организаций. Эти данные собираются автоматически, отправку этих данных можно запретить, отключив
+              cookies (куки) в браузере, в котором открывается сайт. Не персональные данные Кроме персональных данных
+              при посещении сайта собираются не персональные данные, их сбор происходит автоматически веб-сервером, на
+              котором расположен сайт, средствами CMS (системы управления сайтом), скриптами сторонних организаций,
+              установленными на сайте. К данным, собираемым автоматически, относятся: IP адрес и страна его регистрации,
+              имя домена, с которого вы к нам пришли, переходы посетителей с одной страницы сайта на другую, информация,
+              которую ваш браузер предоставляет добровольно при посещении сайта, cookies (куки), фиксируются посещения,
+              иные данные, собираемые счетчиками аналитики сторонних организаций, установленными на сайте. Эти данные
+              носят неперсонифицированный характер и направлены на улучшение обслуживания клиентов, улучшения удобства
+              использования сайта, анализа статистики посещаемости. Предоставление данных третьим лицам Мы не раскрываем
+              личную информацию пользователей компаниям, организациям и частным лицам, не связанным с нами. Исключение
+              составляют случаи, перечисленные ниже. Данные пользователей в общем доступе Персональные данные
+              пользователя могут публиковаться в общем доступе в соответствии с функционалом сайта, например, при
+              оставлении отзывов / вопросов, может публиковаться указанное пользователем имя, такая активность на сайте
+              является добровольной, и пользователь своими действиями дает согласие на такую публикацию. По требованию
+              закона Информация может быть раскрыта в целях воспрепятствования мошенничеству или иным противоправным
+              действиям; по требованию законодательства и в иных случаях, предусмотренных законами РФ. Для оказания
+              услуг, выполнения обязательств Пользователь соглашается с тем, что персональная информация может быть
+              передана третьим лицам в целях оказания заказанных на сайте услуг, выполнении иных обязательств перед
+              пользователем. К таким лицам, например, относятся курьерская служба, почтовые службы, службы
+              грузоперевозок и иные. Сервисам сторонних организаций, установленным на сайте На сайте могут быть
+              установлены формы, собирающие персональную информацию других организаций, в этом случае сбор, хранение и
+              защита персональной информации пользователя осуществляется сторонними организациями в соответствии с их
+              политикой конфиденциальности. Сбор, хранение и защита полученной от сторонней организации информации
+              осуществляется в соответствии с настоящей политикой конфиденциальности. Как мы защищаем вашу информацию Мы
+              принимаем соответствующие меры безопасности по сбору, хранению и обработке собранных данных для защиты их
+              от несанкционированного доступа, изменения, раскрытия или уничтожения, ограничиваем нашим сотрудникам,
+              подрядчикам и агентам доступ к персональным данным, постоянно совершенствуем способы сбора, хранения и
+              обработки данных, включая физические меры безопасности, для противодействия несанкционированному доступу к
+              нашим системам. Ваше согласие с этими условиями Используя сайт, вы выражаете свое согласие с этой
+              политикой конфиденциальности. Если вы не согласны с этой политикой, пожалуйста, не используйте его. Ваше
+              дальнейшее использование сайта после внесения изменений в настоящую политику будет рассматриваться как
+              ваше согласие с этими изменениями. Отказ от ответственности Политика конфиденциальности не
+              распространяется ни на какие другие сайты и не применима к веб-сайтам третьих лиц, которые могут содержать
+              упоминание о нашем сайте и с которых могут делаться ссылки на сайт, а также ссылки с этого сайта на другие
+              сайты сети интернет. Мы не несем ответственности за действия других веб-сайтов. Изменения в политике
+              конфиденциальности Мы имеем право по своему усмотрению обновлять данную политику конфиденциальности в
+              любое время. Используя сайт, вы соглашаетесь с принятием на себя ответственности за периодическое
+              ознакомление с политикой конфиденциальности и изменениями в ней.
 
-         </div>
-         <div class="modal-footer">
-             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">закрыть</button>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">закрыть</button>
 
-         </div>
+            </div>
 
-     </div>
- </div>
-</div>
-<!--  -->
-<!-- // -->
-
-<!-- #payModal -->
-<div class="modal fade" id="payModal" tabindex="-1" aria-labelledby="payModal" aria-hidden="true" >
-  <div class="modal-dialog" >
-    <div class="modal-content" style="background-image: url(img/fon_modal.png);">
-      <div class="form " >
-        <button type="button" class="btn_close" data-bs-dismiss="modal" aria-label="Close"> <img src="img/btn_close.svg" alt=""> </button>
-        <h4>Заказать
-         
-          
-         <br> <span class="bold_txt">  консультацию</span>
-          
-        </h4>
-        
-        <form enctype="multipart/form-data" action="" method="POST">
-          <input type="text" minlength="1" name="name2" id="name2" placeholder="Ваше имя" required>
-          <input type="email" name="email2" value="" id="email2"
-          placeholder="Ваш e-mail" required>
-          <input type="tel" minlength="10" name="telephone2" id="telephone2" placeholder="Номер телефона"
-            required>
-
-          <textarea cols="32" name="message" rows="3" placeholder="Ваше сообщение"></textarea>
-
-          <!-- загрузка файлов -->
-          <input class="file_load " id="input__file" type="file" name="f" multiple accept="image/*">
-          <label class="load_lbl" for="input__file"> 
-            <img src="img/clip.svg" alt="скрепка"> 
-            <div class="field__file-fake" >Прикрепить файл</div>
-          
-          </label>
-
-         
-          
-
-          <button class="btn btn-call" type="submit" class="btn btn-submit">
-            Оплатить
-          </button>
-          <label class="checkbox_lbl" for="checkbox">
-            <input id="checkbox2" class="custom-checkbox" type="checkbox" checked required>
-           <div>
-            Нажимая на кнопку, вы даете согласие
-            на обработку своих <a href="#" data-bs-toggle="modal" data-bs-target="#licenseModal"> персональных данных</a>
-           </div>
-              
-          </label>
-
-          
-
-
-        </form>
-
+          </div>
+        </div>
       </div>
+      <!--  -->
+      <!-- // -->
 
-    </div>
+      <!-- #payModal -->
+      <div class="modal fade" id="payModal" tabindex="-1" aria-labelledby="payModal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content" style="background-image: url(img/fon_modal.png);">
+            <div class="form ">
+              <button type="button" class="btn_close" data-bs-dismiss="modal" aria-label="Close"> <img
+                  src="img/btn_close.svg" alt=""> </button>
+              <h4>Заказать
 
 
-  </div>
-</div>
-<!-- // -->
+                <br> <span class="bold_txt"> консультацию</span>
+
+              </h4>
+
+              <form enctype="multipart/form-data" action="" method="POST">
+                <input type="text" minlength="1" name="name2" id="name2" placeholder="Ваше имя" required>
+                <input type="email" name="email2" value="" id="email2" placeholder="Ваш e-mail" required>
+                <input type="tel" minlength="10" name="telephone2" id="telephone2" placeholder="Номер телефона"
+                  required>
+
+                <textarea cols="32" name="message" rows="3" placeholder="Ваше сообщение"></textarea>
+
+                <!-- загрузка файлов -->
+                <input class="file_load " id="input__file" type="file" name="f" multiple accept="image/*">
+                <label class="load_lbl" for="input__file">
+                  <img src="img/clip.svg" alt="скрепка">
+                  <div class="field__file-fake">Прикрепить файл</div>
+
+                </label>
+
+
+
+
+                <button class="btn btn-call" type="submit" class="btn btn-submit">
+                  Оплатить
+                </button>
+                <label class="checkbox_lbl" for="checkbox">
+                  <input id="checkbox2" class="custom-checkbox" type="checkbox" checked required>
+                  <div>
+                    Нажимая на кнопку, вы даете согласие
+                    на обработку своих <a href="#" data-bs-toggle="modal" data-bs-target="#licenseModal"> персональных
+                      данных</a>
+                  </div>
+
+                </label>
+
+
+
+
+              </form>
+
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+      <!-- // -->
 
 
       <div class="main-content " data-aos="fade-right" data-aos-duration="700">
@@ -265,8 +323,11 @@
             ортопед травматолог
           </span>
         </h1>
-        <p>Профессионализм, использование передовых технологий,
-          многолетний опыт и тщательная разработка плана лечения...</p>
+        <div class="main-content__paragraph">
+          <p>Профессионализм, использование передовых технологий,
+            многолетний опыт и тщательная разработка плана лечения...</p>
+        </div>
+
 
         <button class="btn btn-call " data-bs-toggle="modal" data-bs-target="#CallModal">Получить консультацию</button>
       </div>
@@ -542,7 +603,7 @@
 
       <div class="sertificate-carusel slider3 owl-carousel owl-theme " id="slider3" data-aos="fade-right"
         data-aos-duration="500">
-      <!-- элемент 1 -->
+        <!-- элемент 1 -->
         <div class="carusel_item">
           <div class="wrapper" style="background-image: url(img/certificate_bs.png);">
             <a data-fancybox="gallery" href="img/cert1.jpg">
@@ -552,9 +613,9 @@
               </div>
             </a>
           </div>
-         
+
         </div>
- <!-- элемент 2 -->
+        <!-- элемент 2 -->
 
         <div class="carusel_item">
           <div class="wrapper" style="background-image: url(img/certificate_bs.png);">
@@ -565,45 +626,45 @@
               </div>
             </a>
           </div>
-         
+
         </div>
- <!-- элемент 3 -->
- <div class="carusel_item">
-  <div class="wrapper" style="background-image: url(img/certificate_bs.png);">
-    <a data-fancybox="gallery" href="img/cert2.jpg">
-      <img src="img/cert2.jpg" alt="Сертификат">
-      <div class="galery_shadow">
-        <img src="img/search_cert.svg" alt="лупа">
-      </div>
-    </a>
-  </div>
- 
-</div>
- <!-- элемент 3 -->
- <div class="carusel_item">
-  <div class="wrapper" style="background-image: url(img/certificate_bs.png);">
-    <a data-fancybox="gallery" href="img/cert2.jpg">
-      <img src="img/cert2.jpg" alt="Сертификат">
-      <div class="galery_shadow">
-        <img src="img/search_cert.svg" alt="лупа">
-      </div>
-    </a>
-  </div>
- 
-</div>
- <!-- элемент 3 -->
- <div class="carusel_item">
-  <div class="wrapper" style="background-image: url(img/certificate_bs.png);">
-    <a data-fancybox="gallery" href="img/cert2.jpg">
-      <img src="img/cert2.jpg" alt="Сертификат">
-      <div class="galery_shadow">
-        <img src="img/search_cert.svg" alt="лупа">
-      </div>
-    </a>
-  </div>
- 
-</div>
-       
+        <!-- элемент 3 -->
+        <div class="carusel_item">
+          <div class="wrapper" style="background-image: url(img/certificate_bs.png);">
+            <a data-fancybox="gallery" href="img/cert2.jpg">
+              <img src="img/cert2.jpg" alt="Сертификат">
+              <div class="galery_shadow">
+                <img src="img/search_cert.svg" alt="лупа">
+              </div>
+            </a>
+          </div>
+
+        </div>
+        <!-- элемент 3 -->
+        <div class="carusel_item">
+          <div class="wrapper" style="background-image: url(img/certificate_bs.png);">
+            <a data-fancybox="gallery" href="img/cert2.jpg">
+              <img src="img/cert2.jpg" alt="Сертификат">
+              <div class="galery_shadow">
+                <img src="img/search_cert.svg" alt="лупа">
+              </div>
+            </a>
+          </div>
+
+        </div>
+        <!-- элемент 3 -->
+        <div class="carusel_item">
+          <div class="wrapper" style="background-image: url(img/certificate_bs.png);">
+            <a data-fancybox="gallery" href="img/cert2.jpg">
+              <img src="img/cert2.jpg" alt="Сертификат">
+              <div class="galery_shadow">
+                <img src="img/search_cert.svg" alt="лупа">
+              </div>
+            </a>
+          </div>
+
+        </div>
+
 
       </div>
 
@@ -759,11 +820,12 @@
                 </div>
               </div>
               <div class="right" data-aos="fade-left" data-aos-duration="550">
-               
 
-                <div class="maps" id="map1" data-coordinates="55.75396, 37.620393" data-number=1 style="width: 570px; height: 420px"></div>
 
-                
+                <div class="maps" id="map1" data-coordinates="55.75396, 37.620393" data-number=1
+                  style="width: 570px; height: 420px"></div>
+
+
 
 
               </div>
@@ -801,7 +863,8 @@
                 </div>
               </div>
               <div class="right">
-              <div class="maps" id="map2" data-coordinates="55.75396, 40.393" data-number=2 style="width: 570px; height: 420px"></div>
+                <div class="maps" id="map2" data-coordinates="55.75396, 40.393" data-number=2
+                  style="width: 570px; height: 420px"></div>
 
               </div>
 
@@ -837,8 +900,9 @@
                 </div>
               </div>
               <div class="right">
-             
-                  <div class="maps" id="map3" data-coordinates="25.75396, 60.393" data-number=3 style="width: 570px; height: 420px"></div>
+
+                <div class="maps" id="map3" data-coordinates="25.75396, 60.393" data-number=3
+                  style="width: 570px; height: 420px"></div>
 
               </div>
 
@@ -880,7 +944,8 @@
                 <!-- <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3176.8193514690374!2d37.60933689905935!3d55.73503870993776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b068f61b26d%3A0x90a7b97a365f6b4a!2z0YPQuy4g0JHQvtC70YzRiNCw0Y8g0K_QutC40LzQsNC90LrQsCwgMzYsINCc0L7RgdC60LLQsCwg0KDQvtGB0YHQuNGPLCAxMTkwNDk!5e0!3m2!1sru!2sua!4v1620225468014!5m2!1sru!2sua"
                   width="570" height="310" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
-                  <div class="maps" id="map4" data-coordinates="65.75396, 60.393" data-number=4 style="width: 570px; height: 420px"></div>
+                <div class="maps" id="map4" data-coordinates="65.75396, 60.393" data-number=4
+                  style="width: 570px; height: 420px"></div>
 
               </div>
 
@@ -902,6 +967,9 @@
   </section>
   <footer>
     <div class="container">
+      <div id="toTop">
+        <img src="img/arrow_totop.svg" alt="стрелка вверх направление">
+      </div>
       <div class="footer_top">
         <div class="col">
           <img src="img/logo_foter.png" alt="logo">
@@ -955,8 +1023,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
     integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
     crossorigin="anonymous"></script>
-    <!-- ГАЛЕРЕЯ -->
-    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <!-- ГАЛЕРЕЯ -->
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <!-- owl карусель -->
   <script>
     $('.slider1').owlCarousel({
@@ -1037,23 +1105,23 @@
       responsive: {
         0: {
           items: 2,
-          
+
         },
         576: {
           items: 3,
-           
+
         },
         992: {
           items: 3,
-           
+
         },
         1199: {
           items: 4,
-          
+
         },
         1330: {
           items: 4,
-          
+
         }
       }
     })
@@ -1084,6 +1152,57 @@
         }
       }
     })
+
+    // стики
+    $(document).ready(function () {
+
+      var element = $(".fixed_block");
+      var height_el = element.offset().top;
+
+      $(".fixed_block_position").css({
+        "width": element.outerWidth(),
+        "height": element.outerHeight()
+      });
+
+      $(window).scroll(function () {
+
+        if ($(window).scrollTop() > height_el) {
+
+          element.addClass("fixed");
+
+        } else {
+
+          element.removeClass("fixed");
+
+        }
+
+      });
+
+    });
+
+    $(function() {
+ 
+ $(window).scroll(function() {
+  
+ if($(this).scrollTop() != 0) {
+  
+ $('#toTop').fadeIn();
+  
+ } else {
+  
+ $('#toTop').fadeOut();
+  
+ }
+  
+ });
+  
+ $('#toTop').click(function() {
+  
+ $('body,html').animate({scrollTop:0},200);
+  
+ });
+  
+ });
   </script>
 
 </body>

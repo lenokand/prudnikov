@@ -116,7 +116,23 @@ menu {
         max-width: 1200px;
     }
 
-    .main-menu_top {}
+    .main_menu_bottomn.fixed {
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        width: 80vw;
+        max-width: 1196px;
+        background-color: rgba(255, 255, 255, 0.918);
+        margin-top: 0;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        padding-left: 12px;
+        padding-right: 12px;
+        border-radius: 2px;
+    }
+
+
+
 }
 
 @media screen and (max-width: 1200px) {
@@ -193,7 +209,8 @@ menu {
 
         position: absolute;
         top: 0;
-        left: -260px;
+        left: -360px;
+        opacity: 0;
         width: 100%;
         max-width: 260px;
         height: auto;
@@ -210,10 +227,11 @@ menu {
     #main-menu.open {
         padding-top: 2*$gap;
         padding-left: 2*$gap;
+        opacity: 1;
         left: 0px;
         justify-content: flex-start;
         overflow: hidden;
-        max-width: 320px;
+        max-width: 340px;
 
 
         // >div {
@@ -235,7 +253,7 @@ menu {
 
 // главная
 .main-screen {
-    padding-top: 1.5*$gap;
+    padding-top: 1*$gap;
     background-position: 34vw;
     background-repeat: no-repeat;
     min-height: 100vh;
@@ -543,6 +561,7 @@ menu {
         box-shadow: 0px 6px 32px rgba(60, 103, 186, 0.32);
         padding: 24px 48px;
         position: relative;
+        margin-bottom: 1.5*$gap;
 
         &::after {
             content: "";
@@ -589,8 +608,13 @@ menu {
 
     }
 
+    .main-content__paragraph {
+
+        margin-bottom: 45px;
+    }
+
     p {
-        margin-bottom: 3*$gap;
+        margin-bottom: 0;
     }
 }
 
@@ -823,18 +847,19 @@ menu {
         position: relative;
 
 
-        .carusel_item  .wrapper {
+        .carusel_item .wrapper {
             background-repeat: no-repeat;
             background-size: contain;
 
             position: relative;
             padding: 39px 40px;
-            
+
             >a {
                 .galery_shadow {
                     opacity: 0;
                     transition: 200ms ease;
-                    img{
+
+                    img {
                         opacity: 0;
                         width: 0;
                     }
@@ -851,7 +876,8 @@ menu {
                     top: 39px;
                     left: 40px;
                     opacity: 1;
-                    img{
+
+                    img {
                         opacity: 1;
                         width: 32px;
                     }
@@ -1073,6 +1099,23 @@ footer {
     padding-top: 40px;
     background: linear-gradient(94.09deg, #3C67BA 0%, #4B7FE3 100%);
 
+    #toTop {
+        background: linear-gradient(94.09deg, #3c67ba, #4b7fe3);
+        width: 52px;
+        height: 52px;
+        cursor: pointer;
+        box-shadow: 0px 14px 42px rgba(75, 127, 227, 0.42);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 120px;
+
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+    }
+
     .container {
         display: flex;
         flex-direction: column;
@@ -1205,6 +1248,9 @@ footer {
     menu {
         .main_menu_bottomn {
 
+            div a {
+                font-size: 17px;
+            }
 
             .dropdown-menu {
                 &.show {
@@ -1244,7 +1290,7 @@ footer {
     .types .container .tab-content .carusel-item {
         width: auto;
         height: auto;
-        min-height: 172px;
+        min-height: 200px;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -1276,11 +1322,12 @@ footer {
             }
         }
     }
-    .sertificate   .sertificate-carusel .carusel_item  .wrapper {
-                
-               padding: 30px;
-              
-               }
+
+    .sertificate .sertificate-carusel .carusel_item .wrapper {
+
+        padding: 30px;
+
+    }
 
 
 
@@ -1289,13 +1336,23 @@ footer {
 
 @media screen and (max-width:991px) {
     .sertificate {
-      
+
         .blue_fon {
             top: 300px;
-           
+
+        }
+    }
+
+    .main-content {
+        .main-content__paragraph {
+            background-color: rgba(255, 255, 255, 0.678);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 45px;
         }
     }
 }
+
 @media screen and (max-width:840px) {
     .main-screen {
         background-position: 20vw;
@@ -1304,6 +1361,15 @@ footer {
 }
 
 @media screen and (max-width:768px) {
+    .main-screen {
+        margin-bottom: $gap;
+        min-height: auto;
+    }
+
+    .biography {
+        margin-top: 0;
+    }
+
     .facts {
         .facts_numbers {
             .number_item {
@@ -1347,7 +1413,7 @@ footer {
 
     .types {
         margin-top: 2*$gap;
-        margin-bottom: 2*$gap;
+        margin-bottom: 0;
 
         h2 {
             margin-bottom: $gap;
@@ -1377,7 +1443,23 @@ footer {
 @media screen and (max-width:670px) {
     .main-screen {
         background-position: -20vw;
-        ;
+
+        .main-content {
+            .main-content__paragraph {
+                margin-bottom: 2*$gap;
+            }
+        }
+
+    }
+
+    .types .container .tab-content .carusel-item {
+
+        min-height: 205px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 8px;
+        padding: 15px 30px;
     }
 }
 
@@ -1388,11 +1470,11 @@ footer {
 }
 
 @media screen and (max-width:550px) {
-    .sertificate   .sertificate-carusel .carusel_item  .wrapper {
-                
+    .sertificate .sertificate-carusel .carusel_item .wrapper {
+
         padding: 27px;
-       
-        }
+
+    }
 
     .main-screen {
         background-position: -60vw;
@@ -1913,10 +1995,10 @@ nav.nav_pagination {
 
 
 @media screen and (max-width:650px) {
-    .reweiws .container {
+    .reweiws_p .reweiws .container {
         display: grid;
         grid-gap: 30px;
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
         .reweiws-item {
             padding: 15px 30px;
