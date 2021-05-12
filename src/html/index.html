@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 </head>
 
-<body >
+<body>
 
   <section class="main-screen" style="background-image: url(img/fon_top.png);">
     <div id="shadow"></div>
@@ -68,58 +68,61 @@
             звонок</button>
 
         </div>
+        
+        <div class="wrapper fixed_block">
+          <div class="main_menu_bottomn ">
+            <div> <a href="index.html">Главная</a></div>
+            <div class="dropdown"> <a href="second.html">О враче</a>
+              <a href="#" class="dropdown-toggle" role="button" id="dropdownMenuLink2" data-bs-toggle="dropdown"
+                aria-expanded="false"><img src="img/arrow_menu.svg" alt="стрелка"></a>
+
+              <ul class="dropdown-menu " aria-labelledby="dropdownMenuLink2">
+                <li><a class="dropdown-item" href="certificate.html">Сертификаты</a></li>
+                <li><a class="dropdown-item" href="articles.html"> Моя практика</a></li>
+
+              </ul>
 
 
-        <div class="main_menu_bottomn fixed_block" >
-          <div> <a href="index.html">Главная</a></div>
-          <div class="dropdown"> <a href="second.html">О враче</a>
-            <a href="#" class="dropdown-toggle" role="button" id="dropdownMenuLink2" data-bs-toggle="dropdown"
-              aria-expanded="false"><img src="img/arrow_menu.svg" alt="стрелка"></a>
+            </div>
+            <div class="dropdown"> <a href="second.html">Лечение</a>
+              <a href="#" class="dropdown-toggle" role="button" id="dropdownMenuLink2" data-bs-toggle="dropdown"
+                aria-expanded="false"><img src="img/arrow_menu.svg" alt="стрелка"></a>
 
-            <ul class="dropdown-menu " aria-labelledby="dropdownMenuLink2">
-              <li><a class="dropdown-item" href="certificate.html">Сертификаты</a></li>
-              <li><a class="dropdown-item" href="articles.html"> Моя практика</a></li>
+              <ul class="dropdown-menu " aria-labelledby="dropdownMenuLink2">
+                <li><a class="dropdown-item" href="surg.html">С операцией</a></li>
+                <li><a class="dropdown-item" href="nosurg.html">Без операции</a></li>
 
-            </ul>
+              </ul>
+
+
+            </div>
+
+            <div><a href="reweiws.html">Отзывы</a></div>
+            <div><a href="contacts.html">Контакты</a></div>
+
+
+            <div class="dropdown"> <a href="articles.html">Диагностика и лечение</a>
+              <a href="#" class="dropdown-toggle" role="button" id="dropdownMenuLink2" data-bs-toggle="dropdown"
+                aria-expanded="false"><img src="img/arrow_menu.svg" alt="стрелка"></a>
+
+              <ul class="dropdown-menu " aria-labelledby="dropdownMenuLink2">
+                <li><a class="dropdown-item" href="second.html">Заболевание</a></li>
+                <li><a class="dropdown-item" href="second.html">Симптомы</a></li>
+
+              </ul>
+
+
+            </div>
+
+
+            <div><a href="faq.html">Часто задаваемые вопросы</a></div>
+            <div><a href="#" data-bs-toggle="modal" data-bs-target="#payModal">Получить платную консультацию</a></div>
 
 
           </div>
-          <div class="dropdown"> <a href="second.html">Лечение</a>
-            <a href="#" class="dropdown-toggle" role="button" id="dropdownMenuLink2" data-bs-toggle="dropdown"
-              aria-expanded="false"><img src="img/arrow_menu.svg" alt="стрелка"></a>
-
-            <ul class="dropdown-menu " aria-labelledby="dropdownMenuLink2">
-              <li><a class="dropdown-item" href="surg.html">С операцией</a></li>
-              <li><a class="dropdown-item" href="nosurg.html">Без операции</a></li>
-
-            </ul>
-
-
-          </div>
-
-          <div><a href="reweiws.html">Отзывы</a></div>
-          <div><a href="contacts.html">Контакты</a></div>
-
-
-          <div class="dropdown"> <a href="articles.html">Диагностика и лечение</a>
-            <a href="#" class="dropdown-toggle" role="button" id="dropdownMenuLink2" data-bs-toggle="dropdown"
-              aria-expanded="false"><img src="img/arrow_menu.svg" alt="стрелка"></a>
-
-            <ul class="dropdown-menu " aria-labelledby="dropdownMenuLink2">
-              <li><a class="dropdown-item" href="second.html">Заболевание</a></li>
-              <li><a class="dropdown-item" href="second.html">Симптомы</a></li>
-
-            </ul>
-
-
-          </div>
-
-
-          <div><a href="faq.html">Часто задаваемые вопросы</a></div>
-          <div><a href="#" data-bs-toggle="modal" data-bs-target="#payModal">Получить платную консультацию</a></div>
-
-
         </div>
+
+
 
       </menu>
 
@@ -1180,29 +1183,31 @@
 
     });
 
-    $(function() {
- 
- $(window).scroll(function() {
-  
- if($(this).scrollTop() != 0) {
-  
- $('#toTop').fadeIn();
-  
- } else {
-  
- $('#toTop').fadeOut();
-  
- }
-  
- });
-  
- $('#toTop').click(function() {
-  
- $('body,html').animate({scrollTop:0},200);
-  
- });
-  
- });
+    $(function () {
+
+      $(window).scroll(function () {
+
+        if ($(this).scrollTop() != 0) {
+
+          $('#toTop').fadeIn();
+
+        } else {
+
+          $('#toTop').fadeOut();
+
+        }
+
+      });
+
+      $('#toTop').click(function () {
+
+        $('body,html').animate({
+          scrollTop: 0
+        }, 200);
+
+      });
+
+    });
   </script>
 
 </body>
