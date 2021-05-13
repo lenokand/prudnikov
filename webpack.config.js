@@ -13,7 +13,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
 
-        filename: `[name].bundle.[contenthash].js`,
+        filename: `[name].bundle.js`,
         
     },
     mode: 'production',
@@ -32,7 +32,7 @@ module.exports = {
         //   }),
 
         new MiniCssExtractPlugin({
-            filename: `${new Date().getTime()}.bundle.css`
+            filename: `bundle.css`
         }),          
         new CleanWebpackPlugin(),
 
