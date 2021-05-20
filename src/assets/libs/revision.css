@@ -1,0 +1,58 @@
+@media screen and (max-width: 1200px) {
+    .sertificate .sertificate-carusel .carusel_item .wrapper>a:hover .galery_shadow{
+        display: none;
+    }
+.sertificate .container .sertificate-carusel .carusel_item .wrapper>a>img{
+
+    max-width: 192px;
+}
+
+}
+.sertificate .sertificate-carusel .carusel_item .wrapper>a:hover .galery_shadow{
+height: 279px;
+width: 198px;
+
+
+
+}
+
+
+
+@media screen and (max-width:400px) {
+  .logo_hiden {
+       flex-direction: column;
+       align-items: flex-start;
+       
+
+}
+}
+
+
+.sertificate .container .sertificate-carusel .carusel_item .wrapper {
+min-height: 359px;
+
+}
+    
+.sertificate .sertificate-carusel .carusel_item .wrapper>a>img{
+max-width: 198px
+}
+@media screen and (max-width: 1000px) {
+.sertificate .container .sertificate-carusel .carusel_item .wrapper {
+    min-height: 337px;
+    padding: 36px;
+}
+
+    .sertificate .sertificate-carusel .carusel_item .wrapper>a>img{
+
+    max-width: 185px;
+}
+}
+
+@media screen and (max-width: 900px) {
+.sertificate .container .sertificate-carusel .carusel_item .wrapper{
+min-height: 284px;
+}
+@media screen and (max-width: 767px) {
+.sertificate .container .sertificate-carusel .carusel_item .wrapper{
+    min-height: 313px;
+}

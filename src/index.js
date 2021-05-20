@@ -21,73 +21,133 @@ const menu = document.getElementById('main-menu')
 
 
 const toggleMenu = () => {
-    burger.classList.toggle('open')
-    menu.classList.toggle('open')
-    shadow.classList.toggle('open')
-    
+  burger.classList.toggle('open')
+  menu.classList.toggle('open')
+  shadow.classList.toggle('open')
+
 }
 burger.addEventListener('click', toggleMenu)
 shadow.addEventListener('click', toggleMenu)
 
 
 // // карта
+let mapNameList = document.querySelectorAll('.mapNameList')
+let mapContentList = document.querySelectorAll('.mapContentList')
+
+  if (mapNameList.length > 0 ) {mapNameList[0].classList.add('active') } 
+  if (mapContentList.length > 0 ) {mapContentList[0].classList.add('active') } 
+
+
+
 
 let mapList = document.querySelectorAll('.maps')
 
-mapList.forEach((elementMap, index) =>{
+if (mapList.length > 0) {
+
+
+
+  mapList.forEach((elementMap, index) => {
 
     var coordinate = elementMap.dataset.coordinates
-
-   
+  
+  
     let coordinate2 = coordinate.split(', ', 2)
-    let lat=coordinate2[0] 
-    let lng=coordinate2[1] 
-
-
+    let lat = coordinate2[0]
+    let lng = coordinate2[1]
+  
+  
     var mapNumber = elementMap.dataset.number
-    mapNumber = 'map'+mapNumber
+    mapNumber = 'map' + mapNumber
     // console.log( mapNumber)
-
-
-
+  
+  
+  
     var myMap;
-                  // при успешной загрузке API выполняется соответствующая функция
-                  ymaps.ready(function () {
-                    // создание экземпляра карты и его привязка к контейнеру с id="map"
-                    myMap = new ymaps.Map(mapNumber, {
-                      // центр карты
-                      center: lat, lng
-                      ,
-                      // коэффициент масштабирования
-                      zoom: 8,
-                      // тип карты, по умолчанию используется тип карты "схема"
-                      //type: "yandex#map",
-                    });
-                  }); // end ymaps.ready
+    // при успешной загрузке API выполняется соответствующая функция
+    ymaps.ready(function () {
+      // создание экземпляра карты и его привязка к контейнеру с id="map"
+      myMap = new ymaps.Map(mapNumber, {
+        // центр карты
+        center: lat,
+        lng,
+        // коэффициент масштабирования
+        zoom: 8,
+        // тип карты, по умолчанию используется тип карты "схема"
+        //type: "yandex#map",
+      });
+    }); // end ymaps.ready
+  })
 
-
-})
-
-
-let fields = document.querySelectorAll('.file_load');
+}
 
 
 
-Array.prototype.forEach.call(fields, function (input) {
-  let label = input.nextElementSibling,
+
+
+let Loadfield = document.querySelector('.file_load');
+
+
+let label = Loadfield.nextElementSibling,
     labelVal = label.querySelector('.field__file-fake').innerText;
 
-  input.addEventListener('change', function (e) {
-    let countFiles = '';
-    if (this.files && this.files.length >= 1)
-      countFiles = this.files.length;
+    Loadfield.addEventListener('change', function (e) {
+        let countFiles = '';
+        if (this.files && this.files.length >= 1)
+          countFiles = this.files.length;
 
-    if (countFiles)
-      label.querySelector('.field__file-fake').innerText = 'Выбрано файлов: ' + countFiles;
-    else
-      label.querySelector('.field__file-fake').innerText = labelVal;
-  });
-});
-
+        if (countFiles)
+          label.querySelector('.field__file-fake').innerText = 'Выбрано файлов: ' + countFiles;
+        else
+          label.querySelector('.field__file-fake').innerText = labelVal;
+    });
 
 
+
+
+
+
+
+
+
+// let fields = document.querySelectorAll('.file_load');
+// console.log(fields)
+
+
+
+
+
+// fields.forEach( (input) => {
+//   let label = input.nextElementSibling,
+//     labelVal = label.querySelector('.field__file-fake').innerText;
+
+//   input.addEventListener('change', function (e) {
+//     let countFiles = '';
+//     if (this.files && this.files.length >= 1)
+//       countFiles = this.files.length;
+
+//     if (countFiles)
+//       label.querySelector('.field__file-fake').innerText = 'Выбрано файлов: ' + countFiles;
+//     else
+//       label.querySelector('.field__file-fake').innerText = labelVal;
+//   });
+// });
+
+
+
+
+// Array.prototype.forEach.call(fields, function (input) {
+
+//   let label = input.nextElementSibling,
+//     labelVal = label.querySelector('.field__file-fake').innerText;
+
+//   input.addEventListener('change', function (e) {
+//     let countFiles = '';
+//     if (this.files && this.files.length >= 1)
+//       countFiles = this.files.length;
+
+//     if (countFiles)
+//       label.querySelector('.field__file-fake').innerText = 'Выбрано файлов: ' + countFiles;
+//     else
+//       label.querySelector('.field__file-fake').innerText = labelVal;
+//   });
+// });

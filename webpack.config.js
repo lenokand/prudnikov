@@ -22,11 +22,11 @@ module.exports = {
         open: true
     },
     plugins: [
-        new webpack.ProvidePlugin({
-            $: 'jquery',
-            jQuery: 'jquery',
-            'window.jQuery': 'jquery'
-          }),
+        // new webpack.ProvidePlugin({
+        //     $: 'jquery',
+        //     jQuery: 'jquery',
+        //     'window.jQuery': 'jquery'
+        //   }),
         // new webpack.SourceMapDevToolPlugin ({
         //     filename:'[file].map'
         //   }),

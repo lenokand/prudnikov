@@ -6,10 +6,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Отзывы</title>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+
+
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-    crossorigin="anonymous" />
+  <link rel="stylesheet" href="libs/owl.carousel.min.css"
+  integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+  crossorigin="anonymous" />
+
+
+
+
+
+  <link rel="stylesheet" href="libs/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="libs/revision.css" />
+
+
 </head>
 
 <body>
@@ -56,7 +69,7 @@
             </div>
           </div>
 
-          <button class="btn btn-call wow fadeInDown " data-bs-toggle="modal" data-bs-target="#CallModal">Заказать
+          <button class="btn btn-call wow fadeInDown " data-bs-toggle="modal" data-bs-target="#payModal">Заказать
             звонок</button>
 
         </div>
@@ -120,6 +133,66 @@
         </div>
       </div>
       <!-- // -->
+
+          <!-- #payModal -->
+          <div class="modal fade" id="payModal" tabindex="-1" aria-labelledby="payModal" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content" style="background-image: url(img/fon_modal.png);">
+                <div class="form ">
+                  <button type="button" class="btn_close" data-bs-dismiss="modal" aria-label="Close"> <img
+                      src="img/btn_close.svg" alt=""> </button>
+                  <h4>Заказать
+    
+    
+                    <br> <span class="bold_txt"> консультацию</span>
+    
+                  </h4>
+    
+                  <form enctype="multipart/form-data" action="" method="POST">
+                    <input type="text" minlength="1" name="name2" id="name2" placeholder="Ваше имя" required>
+                    <input type="email" name="email2" value="" id="email2" placeholder="Ваш e-mail" required>
+                    <input type="tel" minlength="10" name="telephone2" id="telephone2" placeholder="Номер телефона"
+                      required>
+    
+                    <textarea cols="32" name="message" rows="3" placeholder="Ваше сообщение"></textarea>
+    
+                    <!-- загрузка файлов -->
+                    <input class="file_load " id="input__file" type="file" name="f" multiple accept="image/*">
+                    <label class="load_lbl" for="input__file">
+                      <img src="img/clip.svg" alt="скрепка">
+                      <div class="field__file-fake">Прикрепить файл</div>
+    
+                    </label>
+    
+    
+    
+    
+                    <button class="btn btn-call" type="submit" class="btn btn-submit">
+                      Оплатить
+                    </button>
+                    <label class="checkbox_lbl" for="checkbox">
+                      <input id="checkbox2" class="custom-checkbox" type="checkbox" checked required>
+                      <div>
+                        Нажимая на кнопку, вы даете согласие
+                        на обработку своих <a href="#" data-bs-toggle="modal" data-bs-target="#licenseModal"> персональных
+                          данных</a>
+                      </div>
+    
+                    </label>
+    
+    
+    
+    
+                  </form>
+    
+                </div>
+    
+              </div>
+    
+    
+            </div>
+          </div>
+          <!-- // -->
 
       <div class="main-content " data-aos="fade-right" data-aos-duration="700">
 
@@ -354,140 +427,17 @@
     </div>
   </footer>
 
-
-
   <!-- OWL -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-    crossorigin="anonymous"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+  <script src="libs/jquery.min.js"></script>
+  
+  <script src="libs/owl.carousel.min.js"
     integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
     crossorigin="anonymous"></script>
-  <!-- owl карусель -->
-  <script>
-    $('.slider1').owlCarousel({
-      loop: true,
-      // autoplay: true,
-      autoplayTimeout: 3000,
-      stagePadding: 0,
-      // center: true,
-      nav: true,
-      navText: [$('.arrow-left '), $('.arrow-right')],
-      dots: false,
-      margin: 20,
-
-      responsive: {
-        0: {
-          items: 1,
-          center: true
-
-        },
-        993: {
-          items: 1,
-          center: true
-
-        },
-        1199: {
-          items: 1,
-          center: true
-
-        },
-        1330: {
-          items: 2,
-          center: false
-
-        }
-      }
-    })
-
-
-    // карусель 2
-    $('.slider2').owlCarousel({
-      loop: true,
-      // autoplay: true,
-      autoplayTimeout: 3000,
-      stagePadding: 0,
-      // center: true,
-      nav: true,
-      navText: [$('.slider-left '), $('.slider-right')],
-      dots: false,
-      margin: 20,
-
-      responsive: {
-        0: {
-          items: 1,
-
-        },
-        1199: {
-          items: 1,
-
-        },
-        1330: {
-          items: 2,
-
-        }
-      }
-    })
-    // карусель 3
-    $('.slider3').owlCarousel({
-      loop: true,
-      // autoplay: true,
-      autoplayTimeout: 3000,
-      stagePadding: 0,
-      // center: true,
-      nav: true,
-      navText: [$('.slider-left2 '), $('.slider-right2')],
-      dots: false,
-      margin: 20,
-
-      responsive: {
-        0: {
-          items: 2,
-
-        },
-        576: {
-          items: 3,
-
-        },
-        1199: {
-          items: 4,
-
-        },
-        1330: {
-          items: 4,
-
-        }
-      }
-    })
-    // карусель 4
-    $('.slider4').owlCarousel({
-      loop: true,
-      // autoplay: true,
-      autoplayTimeout: 3000,
-      stagePadding: 0,
-      // center: true,
-      nav: true,
-      navText: [$('.slider-left3 '), $('.slider-right3')],
-      dots: false,
-      margin: 30,
-
-      responsive: {
-        0: {
-          items: 1,
-
-        },
-        1199: {
-          items: 2,
-
-        },
-        1330: {
-          items: 2,
-
-        }
-      }
-    })
-  </script>
+  <!-- ГАЛЕРЕЯ -->
+  <script src="libs/jquery.fancybox.min.js"></script>
+ 
+ 
+  <script src="libs/customjQuery.js"></script>
 
 </body>
 
