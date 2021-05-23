@@ -1193,6 +1193,7 @@ footer {
         position: fixed;
         bottom: 30px;
         right: 30px;
+        z-index: 2;
     }
 
     .container {
@@ -1599,6 +1600,12 @@ footer {
 }
 
 @media screen and (max-width:550px) {
+ 
+     .content_p .paragraph h2{
+        font-size: 26px;
+    }
+
+
     .sertificate .sertificate-carusel .carusel_item .wrapper {
 
         padding: 27px;
@@ -2880,4 +2887,14 @@ menu .main_menu_bottomn .dropdown .dropdown-menu .dropdown .dropdown-toggle {
 
     }
 
+}
+
+
+@media screen and (max-width:550px) {
+    .content-screen .main-content .h1, .content-screen .main-content h1{
+        font-size: 28px;
+    }
+    .content-screen .container .main-content >.h1 {
+        font-size: 28px;
+    }
 }

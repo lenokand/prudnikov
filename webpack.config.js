@@ -22,14 +22,14 @@ module.exports = {
         open: true
     },
     plugins: [
-        // new webpack.ProvidePlugin({
-        //     $: 'jquery',
-        //     jQuery: 'jquery',
-        //     'window.jQuery': 'jquery'
-        //   }),
-        // new webpack.SourceMapDevToolPlugin ({
-        //     filename:'[file].map'
-        //   }),
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            'window.jQuery': 'jquery'
+          }),
+        new webpack.SourceMapDevToolPlugin ({
+            filename:'[file].map'
+          }),
 
         new MiniCssExtractPlugin({
             filename: `bundle.css`
